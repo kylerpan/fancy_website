@@ -1,0 +1,29 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    display: block;
+}
+
+#body-wrapper {
+    margin: 0 20px 0 20px;
+    display: grid;
+    place-content: center;
+}
+
+#hello {
+    color: red;
+    font-family: Arya;
+    font-size: 50px;
+    /* font-weight: bold; */
+}
