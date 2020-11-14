@@ -18,6 +18,7 @@ body {
 }
 
 #background {
+    z-index: -1;
     position: fixed;
     min-height: 100vh;
     height: auto;
@@ -53,18 +54,42 @@ body {
 .line5 {
     left: calc(50vw + 460px);
 }
+#header {
+    margin: 0 20px 0 20px;
+    display: grid;
+    height: 100px;
+    align-items: end;
+    width: calc(100vw - 40px);
+}
+
+#header-tabs {
+    margin: 0;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    height: auto;
+    width: auto;
+}
+
+.about-me {
+    left: 0;
+}
+
+.gallery {
+    left: 20vw;
+}
 
 #body-wrapper {
     margin: 0 20px 0 20px;
     display: grid;
-    place-content: center;
+    justify-items: center;
     height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 40px);
 }
 
 #hello {
-    color: red;
+    margin: 180px 0 0 0;
+    color: rgb(242, 64, 52);
     font-family: Arya;
-    font-size: 50px;
-    
+    font-size: 150px;
+    align-self: start;
 }
