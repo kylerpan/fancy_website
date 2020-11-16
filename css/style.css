@@ -17,6 +17,7 @@ body {
     display: block;
 }
 
+/* || Background */
 #background {
     z-index: -1;
     position: fixed;
@@ -54,19 +55,14 @@ body {
 .line5 {
     left: calc(50vw + 460px);
 }
+
+/* || Header*/
 #header {
     margin: 0 20px 0 20px;
     display: grid;
     height: 80px;
     align-content: end;
     width: calc(100vw - 40px);
-}
-
-#header-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row: 4 / span 2;
-    grid-column-start: 1;
 }
 
 #header-tabs {
@@ -110,10 +106,25 @@ body {
     width: calc(100vw - 40px);
 }
 
+/* || Content*/
+#introduction {
+    margin: 230px 0 0 0;
+    display: grid;
+    grid-template-rows: 200px 350px 20px;
+    justify-items: center;
+}
+
 #hello {
-    margin: 180px 0 0 0;
+    margin: 0;
     color: rgb(242, 64, 52);
     font-family: Arya;
     font-size: 150px;
-    align-self: start;
+    grid-row-start: 1;
+}
+
+#this-is-my-fancy-website {
+    margin: 0;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    grid-row-start: 3;
 }
