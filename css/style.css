@@ -9,6 +9,7 @@ html {
 body {
     overflow-y: auto;
     overflow-x: hidden;
+    font-family: Source Sans Pro;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -23,7 +24,7 @@ body {
     position: fixed;
     min-height: 100vh;
     height: auto;
-    width: 100vw;
+    width: calc(100vw - 15px);
 }
 
 #lines {
@@ -37,28 +38,28 @@ body {
 }
 
 .line1 {
-    left: calc(50vw - 460px);
+    left: calc(50vw - 460px - 7.5px);
 }
 
 .line2 {
-    left: calc(50vw - 230px);
+    left: calc(50vw - 230px - 7.5px);
 }
 
 .line3 {
-    left: 50vw;
+    left: calc(50vw - 7.5px);
 }
 
 .line4 {
-    left: calc(50vw + 230px);
+    left: calc(50vw + 230px - 7.5px);
 }
 
 .line5 {
-    left: calc(50vw + 460px);
+    left: calc(50vw + 460px - 7.5px);
 }
 
-/* || Header*/
+/* || Header */
 #header {
-    margin: 0 20px 0 20px;
+    margin: 0;
     height: 80px;
     width: calc(100vw - 40px);
     display: grid;
@@ -66,7 +67,6 @@ body {
 }
 
 #header-tabs {
-    font-family: Source Sans Pro;
     font-size: 15px;
     margin: 0;
     top: 60px;
@@ -76,7 +76,7 @@ body {
 
 .logo {
     position: absolute;
-    left: 20px;
+    left: 30px;
     width: 60px;
 }
 
@@ -98,23 +98,25 @@ body {
     width: 50px;
 }
 
+/* || Content */
 #body-wrapper {
-    margin: 0 20px 0 20px;
+    margin: 0;
     display: grid;
-    justify-items: center;
+    justify-content: center;
     height: 100vh;
     width: calc(100vw - 40px);
 }
 
-/* || Content*/
 #introduction {
     margin: 230px 0 0 0;
     display: grid;
     grid-template-rows: 200px 350px 20px 50px;
-    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
 }
 
-#hello {
+#greating {
     color: rgb(242, 64, 52);
     font-family: Arya;
     font-size: 150px;
@@ -123,7 +125,6 @@ body {
 }
 
 #this-is-my-fancy-website {
-    font-family: Source Sans Pro;
     font-size: 15px;
     margin: 0;
     grid-row-start: 3;
@@ -131,12 +132,15 @@ body {
 
 #arrow {
     margin: 10px 0 0 0;
+    /* top: 900px; */
     grid-row-start: 4;
     cursor: pointer;
+    width: 20px;
 }
 
 #arrow-1 {
     background-color: rgb(242, 64, 52);
+    left: 50vw;
     position: fixed;
     height: 40px;
     width: 2px;
@@ -145,11 +149,17 @@ body {
 #arrow-2 {
     border-bottom: solid 2px rgb(242, 64, 52);
     border-right: solid 2px rgb(242, 64, 52);
-    left: calc(50% - 3px);
+    left: (50vw - 8px);
     margin: 23px 0 0 0;
     position: fixed;
     transform: rotate(45deg);
     transform-origin: 50% 100%;
     height: 12px;
     width: 12px;
+}
+
+#inspired {
+    font-size: 35px;
+    margin: 400px 0 0 0;
+    align-self: center;
 }
