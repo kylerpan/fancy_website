@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Apercu Pro;
+    src: url(fonts/Apercu-Pro.ttf);
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ html {
 body {
     overflow-y: auto;
     overflow-x: hidden;
-    font-family: Source Sans Pro;
+    font-family: Apercu Pro;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -61,13 +66,13 @@ body {
 #header {
     margin: 0;
     height: 80px;
-    width: calc(100vw - 40px);
     display: grid;
     align-content: end;
+    width: calc(100vw - 15px);
 }
 
 #header-tabs {
-    font-size: 15px;
+    font-size: 13px;
     margin: 0;
     top: 60px;
     height: auto;
@@ -82,19 +87,25 @@ body {
 
 .about-me {
     position: absolute;
-    left: calc(100vw - 370px);
-    width: 60px;
+    left: calc(100vw - 480px);
+    width: 70px;
 }
 
 .gallery {
     position: absolute;
-    left: calc(100vw - 260px);
+    left: calc(100vw - 370px);
     width: 45px;
 }
 
 .resume {
     position: absolute;
-    left: calc(100vw - 170px);
+    left: calc(100vw - 260px);
+    width: 50px;
+}
+
+.more {
+    position: absolute;
+    left: calc(100vw - 150px);
     width: 50px;
 }
 
@@ -104,7 +115,7 @@ body {
     display: grid;
     justify-content: center;
     height: 100vh;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 15px);
 }
 
 #introduction {
@@ -118,30 +129,32 @@ body {
 
 #greating {
     color: rgb(242, 64, 52);
-    font-family: Arya;
-    font-size: 150px;
+    font-family: Apercu Pro;
+    font-size: 128px;
     margin: 0;
     grid-row-start: 1;
 }
 
 #this-is-my-fancy-website {
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
     grid-row-start: 3;
 }
 
 #arrow {
     margin: 10px 0 0 0;
-    /* top: 900px; */
     grid-row-start: 4;
     cursor: pointer;
+    height: 42px;
     width: 20px;
+    justify-self: center;
 }
 
 #arrow-1 {
     background-color: rgb(242, 64, 52);
-    left: 50vw;
-    position: fixed;
+    top: 890px;
+    left: calc(50vw - 8px);
+    position: absolute;
     height: 40px;
     width: 2px;
 }
@@ -149,9 +162,9 @@ body {
 #arrow-2 {
     border-bottom: solid 2px rgb(242, 64, 52);
     border-right: solid 2px rgb(242, 64, 52);
-    left: (50vw - 8px);
-    margin: 23px 0 0 0;
-    position: fixed;
+    top: 913px;
+    left: calc(50vw - 19px);
+    position: absolute;
     transform: rotate(45deg);
     transform-origin: 50% 100%;
     height: 12px;
