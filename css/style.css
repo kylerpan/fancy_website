@@ -87,26 +87,39 @@ body {
 
 .about-me {
     position: absolute;
-    left: calc(100vw - 480px);
+    left: calc(100vw - 370px);
     width: 70px;
 }
 
 .gallery {
     position: absolute;
-    left: calc(100vw - 370px);
-    width: 45px;
+    left: calc(100vw - 260px);
+    width: 55px;
 }
 
-.resume {
+.gallery-drop-down {
     position: absolute;
-    left: calc(100vw - 260px);
-    width: 50px;
+    background-color: white;
+    top: 90px;
+    left: calc(100vw - 330px);
+    height: 100px;
+    width: 200px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    animation: drop-down 0.4s;
 }
 
 .more {
     position: absolute;
     left: calc(100vw - 150px);
     width: 50px;
+}
+
+.gallery:hover {
+    background-color: rgba(211,211,211,0.7);
+}
+
+.more:hover {
+    background-color: rgba(211,211,211,0.7);
 }
 
 /* || Content */
@@ -175,4 +188,39 @@ body {
     font-size: 35px;
     margin: 400px 0 0 0;
     align-self: center;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 50%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+
+@keyframes drop-down {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+
 }
