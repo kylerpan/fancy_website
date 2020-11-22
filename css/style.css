@@ -97,8 +97,16 @@ body {
     width: 55px;
 }
 
-.gallery-drop-down {
+.more {
     position: absolute;
+    left: calc(100vw - 150px);
+    width: 50px;
+}
+
+.gallery-drop-down {
+    z-index: -1;
+    position: absolute;
+    display: none;
     background-color: white;
     top: 90px;
     left: calc(100vw - 330px);
@@ -108,18 +116,17 @@ body {
     animation: drop-down 0.4s;
 }
 
-.more {
+.more-drop-down {
+    z-index: -1;
     position: absolute;
-    left: calc(100vw - 150px);
-    width: 50px;
-}
-
-.gallery:hover {
-    background-color: rgba(211,211,211,0.7);
-}
-
-.more:hover {
-    background-color: rgba(211,211,211,0.7);
+    display: none;
+    background-color: white;
+    top: 90px;
+    left: calc(100vw - 205px);
+    height: 100px;
+    width: 150px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    animation: drop-down 0.4s;
 }
 
 /* || Content */
@@ -188,28 +195,6 @@ body {
     font-size: 35px;
     margin: 400px 0 0 0;
     align-self: center;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 50%;
-    }
-
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes fade-out {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        opacity: 0;
-        display: none;
-        z-index: -1;
-    }
 }
 
 @keyframes drop-down {
