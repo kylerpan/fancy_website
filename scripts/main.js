@@ -18,11 +18,18 @@ gallery.addEventListener("mouseover", function(event) {
     var start = Date.now();
     var timer = setInterval(function() {
         var timePassed = Date.now() - start;
-        gallery_drop_down.style.top = timePassed / 2 + 'px';
+        gallery_drop_down.style.top = timePassed / 3 + 'px';
         gallery_drop_down.style.opacity = timePassed / 1.7 + "%";
         if (timePassed > 170) clearInterval(timer);
     }, 20)
 }, false);
+
+gallery_drop_down.addEventListener("mouseover", function(event) {
+    console.log("hi");
+    gallery.innerHTML = "Gallery &and;";
+    gallery_drop_down.style.top = "85px";
+    gallery_drop_down.style.opacity = "100%";
+}, false)
 
 gallery.addEventListener("mouseout", function(event) {
     gallery.innerHTML = "Gallery &or;";

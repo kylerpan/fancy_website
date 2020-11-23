@@ -3,6 +3,11 @@
     src: url(fonts/Apercu-Pro.ttf);
 }
 
+@font-face {
+    font-family: Apercu Mono;
+    src: url(fonts/Apercu-Mono.ttf);
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -124,6 +129,12 @@ body {
     width: 150px;
 }
 
+.drop-down-tabs {
+    font-family: Apercu Mono;
+    font-size: 13px;
+    margin: 15px 10px 10px 30px;
+}
+
 /* || Content */
 #body-wrapper {
     margin: 0;
@@ -145,6 +156,14 @@ body {
 #greating {
     color: rgb(242, 64, 52);
     font-family: Apercu Pro;
+    font-size: 128px;
+    margin: 0;
+    grid-row-start: 1;
+}
+
+#greating-2 {
+    color: rgb(242, 64, 52);
+    font-family: Apercu Mono;
     font-size: 128px;
     margin: 0;
     grid-row-start: 1;
