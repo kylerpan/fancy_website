@@ -5,7 +5,7 @@ var gallery_drop_down = document.getElementById('gallery-drop-down');
 var more_drop_down = document.getElementById('more-drop-down');
 
 gallery.onclick = function() {
-    console.log("hi");
+    console.log(typeof gallery_drop_down.style.opacity);
 }
 
 more.onclick = function() {
@@ -28,7 +28,8 @@ gallery.addEventListener("mouseover", function(event) {
     }, 20)
 }, false);
 
-if (gallery_drop_down.style.opacity == "100%") {
+if (gallery_drop_down.style.opacity == "1") {
+    console.log("hi");
     gallery_drop_down.addEventListener("mouseover", function(event) {
         console.log("hi");
         gallery.innerHTML = "Gallery &and;";
