@@ -102,11 +102,21 @@ body {
 .drop-down {
     z-index: -1;
     position: absolute;
+    margin: 20px 0 0 0;
     padding: 15px 0 15px 0;
     opacity: 0%;
     background-color: white;
-    top: 90px;
+    top: -130px;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+#gallery-drop-down-outer {
+    z-index: 2;
+    position: absolute;
+    left: calc(100vw - 330px);
+    top: -150px;
+    height: 150px;
+    width: 200px;
 }
 
 #gallery-drop-down {
