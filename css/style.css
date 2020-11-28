@@ -126,7 +126,17 @@ body {
     width: 200px;
 }
 
+#more-drop-down-outer {
+    z-index: 2;
+    position: absolute;
+    left: calc(100vw - 205px);
+    top: -150px;
+    height: 150px;
+    width: 150px;
+}
+
 #more-drop-down {
+    z-index: 1;
     left: calc(100vw - 205px);
     height: 100px;
     width: 150px;
