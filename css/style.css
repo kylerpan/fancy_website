@@ -86,6 +86,16 @@ body {
     width: 65px;
 }
 
+#gallery-outer {
+    z-index: 3;
+    margin: 0;
+    position: absolute;
+    left: calc(100vw - 260px);
+    top: -170px;
+    height: 20px;
+    width: 55px;
+}
+
 #gallery {
     z-index: 2;
     position: absolute;
@@ -111,7 +121,7 @@ body {
 }
 
 #gallery-drop-down-outer {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     left: calc(100vw - 330px);
     top: -150px;
