@@ -1,4 +1,5 @@
 /* || Header */
+var logo = document.getElementById('logo');
 var about_me = document.getElementById('about-me');
 var gallery = document.getElementById('gallery');
 var more = document.getElementById('more');
@@ -8,8 +9,11 @@ var gallery_drop_down = document.getElementById('gallery-drop-down');
 var more_drop_down_outer = document.getElementById('more-drop-down-outer');
 var more_drop_down = document.getElementById('more-drop-down');
 
+logo.onclick = function() {
+    window.location.href = "index.html";
+}
+
 about_me.onclick = function() {
-    console.log("hi");
     window.location.href = "about_me.html";
 }
 
