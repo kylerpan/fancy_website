@@ -20,7 +20,7 @@ body {
 
 /* || Background */
 #background {
-    z-index: -1;
+    z-index: -3;
     position: fixed;
     min-height: 100vh;
     height: auto;
@@ -28,8 +28,7 @@ body {
 }
 
 .lines {
-    background-color: lightgray;
-    opacity: 0.7;
+    background-color:rgb(239, 239, 239);
     position: fixed;
     margin: 0px;
     min-height: 100vh;
@@ -37,24 +36,49 @@ body {
     width: 1px;
 }
 
-#line1 {
+.line1 {
     left: calc(50vw - 460px - 7.5px);
 }
 
-#line2 {
+.line2 {
     left: calc(50vw - 230px - 7.5px);
 }
 
-#line3 {
+.line3 {
     left: calc(50vw - 7.5px);
 }
 
-#line4 {
+.line4 {
     left: calc(50vw + 230px - 7.5px);
 }
 
-#line5 {
+.line5 {
     left: calc(50vw + 460px - 7.5px);
+}
+
+.color-background {
+    z-index: -2;
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+}
+
+#red {
+    position: absolute;
+    background-color: rgb(242, 64, 52);
+}
+
+.color-lines {
+    z-index: 1;
+    position: absolute;;
+    margin: 0px;
+    height: 50vh;
+    width: 1px;
+}
+
+#red-lines {
+    position: absolute;
+    background-color: rgb(227, 60, 47);
 }
 
 /* || Header */
