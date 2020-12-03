@@ -21,7 +21,7 @@ body {
 /* || Background */
 #background {
     z-index: -3;
-    position: fixed;
+    position: absolute;
     min-height: 100vh;
     height: auto;
     width: calc(100vw - 15px);
@@ -59,25 +59,26 @@ body {
 .color-background {
     z-index: -2;
     position: absolute;
-    height: 50vh;
+    top: 0;
+    left: 0;
+    height: 58vh;
     width: 100vw;
+    display: grid;
 }
 
 #red {
-    position: absolute;
     background-color: rgb(242, 64, 52);
 }
 
 .color-lines {
     z-index: 1;
-    position: absolute;;
+    position: absolute;
     margin: 0px;
-    height: 50vh;
+    height: 58vh;
     width: 1px;
 }
 
 #red-lines {
-    position: absolute;
     background-color: rgb(227, 60, 47);
 }
 
