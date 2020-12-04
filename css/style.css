@@ -100,12 +100,14 @@ body {
 }
 
 #logo {
+    color: black;
     position: absolute;
     left: 30px;
     width: 60px;
 }
 
 #about-me {
+    color: black;
     position: absolute;
     left: calc(100vw - 370px);
     width: 65px;
@@ -122,6 +124,7 @@ body {
 }
 
 #gallery {
+    color: black;
     z-index: 2;
     position: absolute;
     left: calc(100vw - 260px);
@@ -129,6 +132,7 @@ body {
 }
 
 #more {
+    color: black;
     position: absolute;
     left: calc(100vw - 150px);
     width: 50px;
@@ -178,9 +182,14 @@ body {
 }
 
 .drop-down-tabs {
+    z-index: 4;
     font-family: Apercu Mono;
     font-size: 13px;
     margin: 15px 10px 10px 30px;
+}
+
+.drop-down-tabs:hover {
+    background-color: gray;
 }
 
 /* || Content */
