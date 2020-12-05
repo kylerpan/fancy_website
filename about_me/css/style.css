@@ -56,6 +56,32 @@ body {
     left: calc(50vw + 460px - 7.5px);
 }
 
+.color-background {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58vh;
+    width: 100vw;
+    display: grid;
+}
+
+#red {
+    background-color: rgb(242, 64, 52);
+}
+
+.color-lines {
+    z-index: 1;
+    position: absolute;
+    margin: 0px;
+    height: 58vh;
+    width: 1px;
+}
+
+#red-lines {
+    background-color: rgb(227, 60, 47);
+}
+
 /* || Header */
 #header {
     margin: 0;
@@ -66,6 +92,7 @@ body {
 }
 
 .header-tabs {
+    color: white;
     font-size: 13px;
     margin: 0;
     top: 60px;
@@ -74,14 +101,12 @@ body {
 }
 
 #logo {
-    color: black;
     position: absolute;
     left: 30px;
     width: 60px;
 }
 
 #about-me {
-    color: black;
     position: absolute;
     left: calc(100vw - 370px);
     width: 65px;
@@ -98,7 +123,6 @@ body {
 }
 
 #gallery {
-    color: black;
     z-index: 2;
     position: absolute;
     left: calc(100vw - 260px);
@@ -106,7 +130,6 @@ body {
 }
 
 #more {
-    color: black;
     position: absolute;
     left: calc(100vw - 150px);
     width: 50px;

@@ -14,11 +14,11 @@ var inspiration_tab = document.getElementsByClassName('drop-down-tabs')[3];
 
 
 logo.onclick = function() {
-    location.reload();
+    window.location.href = "/index.html";
 }
 
 about_me.onclick = function() {
-    window.location.href = "/about_me";
+    location.reload();
 }
 
 gallery.onclick = function() {
