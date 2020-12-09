@@ -29,111 +29,111 @@ more.onclick = function() {
     console.log("hi");
 }
 
-gallery.addEventListener("mouseover", function(event) {
-    gallery.innerHTML = "Gallery &and;";
-    // gallery_drop_down.style.top = "75px";
-    // gallery_drop_down.style.opacity = "100%";
-    // gallery_drop_down_outer.style.top = "75px";
-    var start = Date.now();
-    var timer = setInterval(function() {
-        var timePassed = Date.now() - start;
-        gallery_drop_down.style.top = timePassed / 2 + 'px';
-        gallery_drop_down.style.opacity = timePassed / 1.5 + "%";
-        if (timePassed > 150) {
-            gallery_drop_down.style.top = "75px";
-            gallery_drop_down.style.opacity = "100%";
-            gallery_drop_down_outer.style.top = "75px";
-            gallery_outer.style.top = "60px";
-            clearInterval(timer);
-        }
-    }, 20)
-}, false);
+// gallery.addEventListener("mouseover", function(event) {
+//     gallery.innerHTML = "Gallery &and;";
+//     // gallery_drop_down.style.top = "75px";
+//     // gallery_drop_down.style.opacity = "100%";
+//     // gallery_drop_down_outer.style.top = "75px";
+//     var start = Date.now();
+//     var timer = setInterval(function() {
+//         var timePassed = Date.now() - start;
+//         gallery_drop_down.style.top = timePassed / 2 + 'px';
+//         gallery_drop_down.style.opacity = timePassed / 1.5 + "%";
+//         if (timePassed > 150) {
+//             gallery_drop_down.style.top = "75px";
+//             gallery_drop_down.style.opacity = "100%";
+//             gallery_drop_down_outer.style.top = "75px";
+//             gallery_outer.style.top = "60px";
+//             clearInterval(timer);
+//         }
+//     }, 20)
+// }, false);
 
-gallery_outer.addEventListener("mouseover", function(event) {
-    gallery.innerHTML = "Gallery &and;";
-    gallery_drop_down.style.top = "75px";
-    gallery_drop_down.style.opacity = "100%";
-    gallery_drop_down_outer.style.top = "75px";
-    gallery_outer.style.top = "60px";
-}, false)
+// gallery_outer.addEventListener("mouseover", function(event) {
+//     gallery.innerHTML = "Gallery &and;";
+//     gallery_drop_down.style.top = "75px";
+//     gallery_drop_down.style.opacity = "100%";
+//     gallery_drop_down_outer.style.top = "75px";
+//     gallery_outer.style.top = "60px";
+// }, false)
 
-gallery_drop_down_outer.addEventListener("mouseover", function(event) {
-    gallery.innerHTML = "Gallery &and;";
-    gallery_drop_down.style.top = "75px";
-    gallery_drop_down.style.opacity = "100%";
-    gallery_drop_down_outer.style.top = "75px";
-    gallery_outer.style.top = "60px";
-}, false)
+// gallery_drop_down_outer.addEventListener("mouseover", function(event) {
+//     gallery.innerHTML = "Gallery &and;";
+//     gallery_drop_down.style.top = "75px";
+//     gallery_drop_down.style.opacity = "100%";
+//     gallery_drop_down_outer.style.top = "75px";
+//     gallery_outer.style.top = "60px";
+// }, false)
 
-gallery_outer.addEventListener("mouseout", function(event) {
-    gallery.innerHTML = "Gallery &or;";
-    gallery_drop_down_outer.style.top = "-150px";
-    gallery_outer.style.top = "-170px";
-    // gallery_drop_down.style.top = "-130px";
-    // gallery_drop_down.style.opacity = "0%";
-    // gallery_drop_down_outer.style.top = "-150px";
-    var start = Date.now();
-    var timer = setInterval(function() {
-        var timePassed = Date.now() - start;
-        gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
-        gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
-        if (timePassed > 150) {
-            gallery_drop_down.style.top = "-130px";
-            gallery_drop_down.style.opacity = "0%";
-            clearInterval(timer);
-        }
-    }, 20)
-    // setTimeout(function() {
-    //     var start = Date.now();
-    //     var timer = setInterval(function() {
-    //         var timePassed = Date.now() - start;
-    //         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
-    //         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
-    //         gallery_drop_down_outer.style.top = "-150px";
-    //         gallery_outer.style.top = "-170px";
-    //         if (timePassed > 150) {
-    //             gallery_drop_down.style.top = "-130px";
-    //             gallery_drop_down.style.opacity = "0%";
-    //             clearInterval(timer);
-    //         }
-    //     }, 20)
-    // }, 200)
-}, false);
+// gallery_outer.addEventListener("mouseout", function(event) {
+//     gallery.innerHTML = "Gallery &or;";
+//     gallery_drop_down_outer.style.top = "-150px";
+//     gallery_outer.style.top = "-170px";
+//     // gallery_drop_down.style.top = "-130px";
+//     // gallery_drop_down.style.opacity = "0%";
+//     // gallery_drop_down_outer.style.top = "-150px";
+//     var start = Date.now();
+//     var timer = setInterval(function() {
+//         var timePassed = Date.now() - start;
+//         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
+//         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
+//         if (timePassed > 150) {
+//             gallery_drop_down.style.top = "-130px";
+//             gallery_drop_down.style.opacity = "0%";
+//             clearInterval(timer);
+//         }
+//     }, 20)
+//     // setTimeout(function() {
+//     //     var start = Date.now();
+//     //     var timer = setInterval(function() {
+//     //         var timePassed = Date.now() - start;
+//     //         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
+//     //         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
+//     //         gallery_drop_down_outer.style.top = "-150px";
+//     //         gallery_outer.style.top = "-170px";
+//     //         if (timePassed > 150) {
+//     //             gallery_drop_down.style.top = "-130px";
+//     //             gallery_drop_down.style.opacity = "0%";
+//     //             clearInterval(timer);
+//     //         }
+//     //     }, 20)
+//     // }, 200)
+// }, false);
 
-gallery_drop_down_outer.addEventListener("mouseout", function(event) {
-    gallery.innerHTML = "Gallery &or;";
-    gallery_drop_down_outer.style.top = "-150px";
-    gallery_outer.style.top = "-170px";
-    // gallery_drop_down.style.top = "-130px";
-    // gallery_drop_down.style.opacity = "0%";
-    // gallery_drop_down_outer.style.top = "-150px";
-    var start = Date.now();
-    var timer = setInterval(function() {
-        var timePassed = Date.now() - start;
-        gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
-        gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
-        if (timePassed > 150) {
-            gallery_drop_down.style.top = "-130px";
-            gallery_drop_down.style.opacity = "0%";
-            clearInterval(timer);
-        }
-    }, 20)
-    // setTimeout(function() {
-    //     var start = Date.now();
-    //     var timer = setInterval(function() {
-    //         var timePassed = Date.now() - start;
-    //         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
-    //         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
-    //         gallery_drop_down_outer.style.top = "-150px";
-    //         gallery_outer.style.top = "-170px";
-    //         if (timePassed > 150) {
-    //             gallery_drop_down.style.top = "-130px";
-    //             gallery_drop_down.style.opacity = "0%";
-    //             clearInterval(timer);
-    //         }
-    //     }, 20)
-    // }, 200)
-}, false)
+// gallery_drop_down_outer.addEventListener("mouseout", function(event) {
+//     gallery.innerHTML = "Gallery &or;";
+//     gallery_drop_down_outer.style.top = "-150px";
+//     gallery_outer.style.top = "-170px";
+//     // gallery_drop_down.style.top = "-130px";
+//     // gallery_drop_down.style.opacity = "0%";
+//     // gallery_drop_down_outer.style.top = "-150px";
+//     var start = Date.now();
+//     var timer = setInterval(function() {
+//         var timePassed = Date.now() - start;
+//         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
+//         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
+//         if (timePassed > 150) {
+//             gallery_drop_down.style.top = "-130px";
+//             gallery_drop_down.style.opacity = "0%";
+//             clearInterval(timer);
+//         }
+//     }, 20)
+//     // setTimeout(function() {
+//     //     var start = Date.now();
+//     //     var timer = setInterval(function() {
+//     //         var timePassed = Date.now() - start;
+//     //         gallery_drop_down.style.top = 75 - timePassed / 2 + 'px';
+//     //         gallery_drop_down.style.opacity = 100 - timePassed / 1.5 + "%";
+//     //         gallery_drop_down_outer.style.top = "-150px";
+//     //         gallery_outer.style.top = "-170px";
+//     //         if (timePassed > 150) {
+//     //             gallery_drop_down.style.top = "-130px";
+//     //             gallery_drop_down.style.opacity = "0%";
+//     //             clearInterval(timer);
+//     //         }
+//     //     }, 20)
+//     // }, 200)
+// }, false)
 
 more.addEventListener("mouseover", function(event) {
     more.innerHTML = "More &and;";
