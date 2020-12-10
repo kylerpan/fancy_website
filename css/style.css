@@ -107,26 +107,20 @@ body {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* #testtest{
-    display: inline-block;
-    vertical-align: middle;
-} */
-
 #test {
+    z-index: 3;
     position: absolute;
-    top: 60px;
+    transition-property: top;
+    top: -155px;
     left: calc(100vw - 333.5px);
 }
 
-#test > path {
+path {
     fill: none;
     stroke: gold;
-    stroke-width: 0.1;
+    stroke-width: 0.5;
     pointer-events: all;
-}
-
-#test > path:hover {
-    fill: gold;
+    cursor: pointer;
 }
 
 #gallery-drop-down {
@@ -135,21 +129,30 @@ body {
     width: 200px;
 }
 
-#gallery:hover + #gallery-drop-down {
+#gallery:hover ~ #gallery-drop-down {
     display: block;
     animation: drop_down_forward 1s forwards;
 }
 
-#gallery:not(:hover) + #gallery-drop-down {
+#gallery:not(:hover) ~ #gallery-drop-down {
     display: block;
     animation: drop_down_backward 1s forwards;
 }
 
-#gallery-drop-down:hover {
+#gallery:hover + #test {
+    transition-delay: 1s;
+    top: 60px;
+}
+
+/* path:hover {
+    fill: blue;
+} */
+
+/* #gallery-drop-down:hover {
     animation: none;
     top: 75px;
     opacity: 100%;
-}
+} */
 
 #more {
     color: black;
@@ -295,6 +298,16 @@ body {
         opacity: 0;
         display: none;
         z-index: -1;
+    }
+}
+
+@keyframes appear {
+    from {
+
+    }
+
+    to {
+        display: block;
     }
 }
 

@@ -11,6 +11,7 @@ var more_drop_down_outer = document.getElementById('more-drop-down-outer');
 var more_drop_down = document.getElementById('more-drop-down');
 var resume_tab = document.getElementsByClassName('drop-down-tabs')[2];
 var inspiration_tab = document.getElementsByClassName('drop-down-tabs')[3];
+var path = document.getElementsByTagName('path')[0];
 
 
 logo.onclick = function() {
@@ -27,6 +28,16 @@ gallery.onclick = function() {
 
 more.onclick = function() {
     console.log("hi");
+}
+
+path.onclick = function() {
+    path.style.fill = "blue";
+}
+
+path.onmouseover = function() {
+    gallery_drop_down.style.top = "65px";
+    gallery_drop_down.style.opacity = "100%";
+    gallery_drop_down.style.display = "block";
 }
 
 // gallery.addEventListener("mouseover", function(event) {
