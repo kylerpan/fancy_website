@@ -65,14 +65,6 @@ body {
     width: calc(100vw - 15px);
 }
 
-.header-tabs {
-    font-size: 13px;
-    margin: 0;
-    top: 60px;
-    height: 20px;
-    cursor: pointer;
-}
-
 #logo {
     color: black;
     position: absolute;
@@ -93,18 +85,6 @@ body {
     position: absolute;
     left: calc(100vw - 260px);
     width: 53px;
-}
-
-.drop-down {
-    z-index: 1;
-    position: absolute;
-    margin: 20px 0 0 0;
-    padding: 15px 0 15px 0;
-    opacity: 0%;
-    background-color: white;
-    top: 0px;
-    display: none;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
 }
 
 #test {
@@ -154,13 +134,6 @@ path {
     opacity: 100%;
 } */
 
-#more {
-    color: black;
-    position: absolute;
-    left: calc(100vw - 150px);
-    width: 50px;
-}
-
 #gallery-outer {
     z-index: 3;
     margin: 0;
@@ -196,42 +169,78 @@ path {
     width: 150px;
 } */
 
+.header-tabs {
+    font-size: 13px;
+    margin: 0;
+    top: 60px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.drop-down {
+    z-index: 1;
+    position: absolute;
+    margin: 20px 0 0 0;
+    padding: 15px 0 15px 0;
+    opacity: 0%;
+    background-color: white;
+    top: 0px;
+    display: none;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+#more {
+    color: black;
+    position: absolute;
+    left: calc(100vw - 150px);
+    width: 50px;
+}
+
 .drop-down-tabs {
     z-index: 4;
     font-family: Apercu Mono;
     font-size: 13px;
-    margin: 15px 10px 10px 30px;
+    margin: 15px 10px 10px 25px;
 }
-
-/* .drop-down-tabs:hover {
-    background-color: gray;
-} */
 
 .dropdown {
     position: absolute;
     display: inline-block;
-    top: 60px;
+    top: 58px;
     left: calc(100vw - 150px);
 }
 
 #new-more {
     font-size: 13px;
 }
+
+.dropdown-area {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    height: 100px;
+    width: 150px;
+}
   
-.dropdown-content {
+#more-content {
+    z-index: 2;
     display: none;
     position: absolute;
     top: 30px;
-    left: -50px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    left: -54.406px;
+    background-color: white;
+    height: 100px;
+    width: 150px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    padding: 15px 0 15px 0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover #more-content, .dropdown-area{
     display: block;
+}
+
+.drop-down-tabs:hover{
+    background-color: lightgrey;
 }
 
 /* || Content */
