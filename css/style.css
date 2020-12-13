@@ -60,114 +60,11 @@ body {
 #header {
     margin: 0;
     height: 80px;
-    display: grid;
+    display: block;
     align-content: end;
     width: calc(100vw - 15px);
+    grid-template-rows: 1;
 }
-
-#logo {
-    color: black;
-    position: absolute;
-    left: 30px;
-    width: 60px;
-}
-
-#about-me {
-    color: black;
-    position: absolute;
-    left: calc(100vw - 370px);
-    width: 65px;
-}
-
-#gallery {
-    color: black;
-    z-index: 2;
-    position: absolute;
-    left: calc(100vw - 260px);
-    width: 53px;
-}
-
-#test {
-    z-index: 3;
-    position: absolute;
-    transition-property: top;
-    top: -155px;
-    left: calc(100vw - 333.5px);
-}
-
-path {
-    fill: none;
-    stroke: gold;
-    stroke-width: 0.5;
-    pointer-events: all;
-    cursor: pointer;
-}
-
-#gallery-drop-down {
-    left: calc(100vw - 333.5px);
-    height: 100px;
-    width: 200px;
-}
-
-#gallery:hover ~ #gallery-drop-down {
-    display: block;
-    animation: drop_down_forward 1s forwards;
-}
-
-#gallery:not(:hover) ~ #gallery-drop-down {
-    display: block;
-    animation: drop_down_backward 1s forwards;
-}
-
-#gallery:hover + #test {
-    transition-delay: 1s;
-    top: 60px;
-}
-
-/* path:hover {
-    fill: blue;
-} */
-
-/* #gallery-drop-down:hover {
-    animation: none;
-    top: 75px;
-    opacity: 100%;
-} */
-
-#gallery-outer {
-    z-index: 3;
-    margin: 0;
-    position: absolute;
-    left: calc(100vw - 260px);
-    top: -170px;
-    height: 20px;
-    width: 55px;
-}
-
-#gallery-drop-down-outer {
-    z-index: 3;
-    position: absolute;
-    left: calc(100vw - 330px);
-    top: -150px;
-    height: 150px;
-    width: 200px;
-}
-
-#more-drop-down-outer {
-    z-index: 2;
-    position: absolute;
-    left: calc(100vw - 205px);
-    top: -150px;
-    height: 150px;
-    width: 150px;
-}
-
-/* #more-drop-down {
-    z-index: 1;
-    left: calc(100vw - 205px);
-    height: 100px;
-    width: 150px;
-} */
 
 .header-tabs {
     font-size: 13px;
@@ -177,16 +74,67 @@ path {
     cursor: pointer;
 }
 
-.drop-down {
+#logo {
+    color: black;
+    position: absolute;
+    left: 30px;
+    width: 60px;
+    grid-row-start: 1;
+}
+
+#about-me {
+    color: black;
+    position: absolute;
+    left: calc(100vw - 370px);
+    width: 65px;
+    grid-row-start: 1;
+}
+
+#gallery-drop-down {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    top: 56px;
+    left: calc(100vw - 260px);
+    cursor: pointer;
+}
+
+#gallery {
+    z-index: 3;
+    font-size: 13px;
+}
+
+#gallery-area {
     z-index: 1;
+    display: none;
+    position: absolute;
+    top: -70px;
+    left: -54.406px;
+    height: 100px;
+    width: 150px;
+}
+  
+#gallery-content {
+    z-index: 2;
+    display: none;
     position: absolute;
     margin: 20px 0 0 0;
-    padding: 15px 0 15px 0;
-    opacity: 0%;
+    top: -78px;
+    left: -54.406px;
     background-color: white;
-    top: 0px;
-    display: none;
+    height: 100px;
+    width: 150px;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+    padding: 15px 0 15px 0;
+}
+
+#more-drop-down {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    top: 56px;
+    left: calc(100vw - 210px);
+    cursor: pointer;
 }
 
 #more {
@@ -194,23 +142,8 @@ path {
     font-size: 13px;
 }
 
-.drop-down-tabs {
-    z-index: 4;
-    font-family: Apercu Mono;
-    font-size: 13px;
-    margin: 15px 10px 10px 25px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    top: -2px;
-    left: calc(100vw - 150px);
-}
-
-.more-area {
+#more-area {
     z-index: 1;
-    background-color: yellow;
     display: none;
     position: absolute;
     top: -70px;
@@ -233,9 +166,21 @@ path {
     padding: 15px 0 15px 0;
 }
 
-.dropdown:hover #more-content, .dropdown:hover .more-area{
+.drop-down-tabs {
+    z-index: 4;
+    font-family: Apercu Mono;
+    font-size: 13px;
+    margin: 15px 10px 10px 25px;
+}
+
+#gallery-drop-down:hover #gallery-content, #gallery-drop-down:hover #gallery-area{
     display: block;
-    animation: drop_down_forward 1s forwards;
+    animation: drop_down_forward 0.5s forwards;
+}
+
+#more-drop-down:hover #more-content, #more-drop-down:hover #more-area{
+    display: block;
+    animation: drop_down_forward 0.5s forwards;
 }
 
 .drop-down-tabs:hover{
@@ -304,47 +249,7 @@ path {
     width: 12px;
 }
 
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
 
-    to {
-        transform: scale(1);
-    }
-}
-
-@keyframes fade_in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 100%;
-    }
-}
-
-@keyframes fade_out {
-    from {
-        opacity: 100%;
-    }
-
-    to {
-        opacity: 0;
-        display: none;
-        z-index: -1;
-    }
-}
-
-@keyframes appear {
-    from {
-
-    }
-
-    to {
-        display: block;
-    }
-}
 
 @keyframes drop_down_forward {
     from {
@@ -355,18 +260,5 @@ path {
     to {
         opacity: 100%;
         transform: translateY(88px);
-    }
-}
-
-@keyframes drop_down_backward {
-    from {
-        opacity: 100%;
-        transform: translateY(65px);
-    }
-
-    to {
-        opacity: 0;
-        transform: translateY(0);
-        display: none;
     }
 }
