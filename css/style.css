@@ -63,7 +63,6 @@ body {
     display: block;
     align-content: end;
     width: calc(100vw - 15px);
-    grid-template-rows: 1;
 }
 
 .header-tabs {
@@ -79,7 +78,6 @@ body {
     position: absolute;
     left: 30px;
     width: 60px;
-    grid-row-start: 1;
 }
 
 #about-me {
@@ -87,7 +85,6 @@ body {
     position: absolute;
     left: calc(100vw - 370px);
     width: 65px;
-    grid-row-start: 1;
 }
 
 #gallery-drop-down {

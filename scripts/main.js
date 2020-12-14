@@ -15,7 +15,7 @@ about_me.onclick = function() {
 }
 
 gallery.onclick = function() {
-    console.log("hi");
+    window.location.href = "/gallery";
 }
 
 more.onclick = function() {
