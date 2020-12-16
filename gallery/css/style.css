@@ -296,19 +296,33 @@ body {
     color: rgb(255, 171, 64);
     position: absolute;
     font-size: 144px;
-    top: 1200px;
     left: 100px;
+}
+
+.portraits-section {
+    top: 1200px;
+}
+
+.landscapes-section {
+    top: 2420px;
 }
 
 .image-wrapper {
     position: absolute;
-    top: 1520px;
     left: calc(50vw - 85% / 2 - 6.5px);
-    height: 100%;
+    height: auto;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
+}
+
+.portraits-image-wrapper {
+    top: 1520px;
+}
+
+.landscapes-image-wrapper {
+    top: 2740px;
 }
 
 .column_1 {
