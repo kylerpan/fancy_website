@@ -1,5 +1,4 @@
 /* || Header */
-var header_tabs = document.getElementsByClassName('header-tabs');
 var logo = document.getElementById('logo');
 var about_me = document.getElementById('about-me');
 var gallery = document.getElementById('gallery');

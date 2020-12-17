@@ -4,6 +4,7 @@ html {
     min-height: 100vh;
     height: auto;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -299,11 +300,11 @@ body {
     left: 100px;
 }
 
-.portraits-section {
+#portraits-section {
     top: 1200px;
 }
 
-.landscapes-section {
+#landscapes-section {
     top: 2420px;
 }
 
