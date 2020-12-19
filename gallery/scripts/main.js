@@ -5,6 +5,7 @@ var gallery = document.getElementById('gallery');
 var more = document.getElementById('more');
 var portrait_header = document.getElementById('portrait-header');
 var landscape_header = document.getElementById('landscape-header');
+var resume = document.getElementsByClassName('drop-down-tabs')[0];
 
 
 logo.onclick = function() {
@@ -29,4 +30,17 @@ portrait_header.onclick = function() {
 
 landscape_header.onclick = function() {
     window.scrollTo(0, 2520);
+}
+
+resume.onclick = function() {
+    window.open("/assets/resume.pdf");
+}
+
+/* || Height of Website */
+var body = document.getElementsByTagName('body')[0];
+
+function resize_body(){
+    body.style.height = "auto";
+    var body_height = String(body.scrollHeight) + "px";
+    body.style.height = body_height;
 }
