@@ -8,13 +8,14 @@ html {
 }
 
 body {
+    position: relative;
     overflow-y: auto;
     overflow-x: hidden;
     font-family: Apercu Pro;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    height: auto;
+    /* min-height: 100vh; */
+    height: 5200px;
     width: 100vw;
     display: block;
 }
@@ -329,11 +330,25 @@ img {
 #footer {
     position: absolute;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(235, 235, 235);
     margin: 0;
-    height: 180px;
+    height: 400px;
     width: 100vw;
+    /* margin: 50px 20px 20px 20px; */
+    /* padding: 80px 20px 20px 20px;
     display: grid;
+    grid-template-columns: 300px 90px;
+    grid-template-rows: 400px;
+    text-align: start;
+    text-justify: start; */
+}    
+
+#footer-logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 25px;
+    /* grid-column-start: 1; */
 }
 
 

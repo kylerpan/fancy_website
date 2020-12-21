@@ -37,10 +37,12 @@ resume.onclick = function() {
 }
 
 /* || Height of Website */
-var body = document.getElementsByTagName('body')[0];
+// var body = document.getElementsByTagName('body')[0];
 
-function resize_body(){
-    body.style.height = "auto";
-    var body_height = String(body.scrollHeight) + "px";
-    body.style.height = body_height;
-}
+// function resize_body(){
+//     body.style.height = "auto";
+//     var body_height = String(body.scrollHeight) + "px";
+//     body.style.height = body_height;
+// }
+
+// resize_body();
