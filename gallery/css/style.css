@@ -332,23 +332,39 @@ img {
     bottom: 0;
     background-color: rgb(235, 235, 235);
     margin: 0;
-    height: 400px;
-    width: 100vw;
+    height: 300px;
+    width: calc(100vw - 96px);
     /* margin: 50px 20px 20px 20px; */
-    /* padding: 80px 20px 20px 20px;
+    padding: 60px 56px 20px 40px;
     display: grid;
-    grid-template-columns: 300px 90px;
-    grid-template-rows: 400px;
+    grid-template-columns: 300px repeat(5, 1fr);
+    grid-template-rows: repeat(10, 30px);
     text-align: start;
-    text-justify: start; */
+    text-justify: start;
 }    
 
 #footer-logo {
-    position: absolute;
-    top: 50px;
-    left: 50px;
+    margin: 0;
     font-size: 25px;
-    /* grid-column-start: 1; */
+    grid-column-start: 1;
+}
+
+#footer-about-me {
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 4;
+}
+
+#footer-gallery {
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 5;
+}
+
+#footer-more {
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 6;
 }
 
 
