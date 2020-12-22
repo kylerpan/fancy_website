@@ -347,24 +347,46 @@ img {
     margin: 0;
     font-size: 25px;
     grid-column-start: 1;
+    cursor: pointer;
 }
 
 #footer-about-me {
     margin: 0;
     font-size: 13px;
     grid-column-start: 4;
+    cursor: pointer;
 }
 
 #footer-gallery {
     margin: 0;
     font-size: 13px;
     grid-column-start: 5;
+    cursor: pointer;
+}
+
+#footer-portrait {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: underline;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    cursor: pointer;
+}
+
+#footer-landscape {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: underline;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    cursor: pointer;
 }
 
 #footer-more {
     margin: 0;
     font-size: 13px;
     grid-column-start: 6;
+    cursor: pointer;
 }
 
 
