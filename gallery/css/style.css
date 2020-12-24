@@ -344,6 +344,7 @@ img {
 }    
 
 #footer-logo {
+    color: rgb(50, 50, 50);
     margin: 0;
     font-size: 25px;
     grid-column-start: 1;
@@ -351,6 +352,7 @@ img {
 }
 
 #footer-about-me {
+    color: rgb(50, 50, 50);    
     margin: 0;
     font-size: 13px;
     grid-column-start: 4;
@@ -358,6 +360,7 @@ img {
 }
 
 #footer-gallery {
+    color: rgb(50, 50, 50);
     margin: 0;
     font-size: 13px;
     grid-column-start: 5;
@@ -365,6 +368,7 @@ img {
 }
 
 #footer-portrait {
+    color: rgb(71, 71, 71);
     margin: 0;
     font-size: 13px;
     text-decoration: underline;
@@ -374,6 +378,7 @@ img {
 }
 
 #footer-landscape {
+    color: rgb(71, 71, 71);
     margin: 0;
     font-size: 13px;
     text-decoration: underline;
@@ -383,6 +388,7 @@ img {
 }
 
 #footer-more {
+    color: rgb(50, 50, 50);
     margin: 0;
     font-size: 13px;
     grid-column-start: 6;
