@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    position: relative;
     overflow-y: auto;
     overflow-x: hidden;
     font-family: Apercu Pro;
@@ -212,6 +213,75 @@ body {
     transform-origin: 50% 100%;
     height: 12px;
     width: 12px;
+}
+
+/* || Footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    height: 300px;
+    width: calc(100vw - 96px);
+    /* margin: 50px 20px 20px 20px; */
+    padding: 60px 56px 20px 40px;
+    display: grid;
+    grid-template-columns: 300px repeat(5, 1fr);
+    grid-template-rows: repeat(10, 30px);
+    text-align: start;
+    text-justify: start;
+}    
+
+#footer-logo {
+    color: rgb(50, 50, 50);
+    margin: 0;
+    font-size: 25px;
+    grid-column-start: 1;
+    cursor: pointer;
+}
+
+#footer-about-me {
+    color: rgb(50, 50, 50);    
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 4;
+    cursor: pointer;
+}
+
+#footer-gallery {
+    color: rgb(50, 50, 50);
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 5;
+    cursor: pointer;
+}
+
+#footer-portrait {
+    color: rgb(71, 71, 71);
+    margin: 0;
+    font-size: 13px;
+    text-decoration: underline;
+    grid-column-start: 5;
+    grid-row-start: 2;
+    cursor: pointer;
+}
+
+#footer-landscape {
+    color: rgb(71, 71, 71);
+    margin: 0;
+    font-size: 13px;
+    text-decoration: underline;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    cursor: pointer;
+}
+
+#footer-more {
+    color: rgb(50, 50, 50);
+    margin: 0;
+    font-size: 13px;
+    grid-column-start: 6;
+    cursor: pointer;
 }
 
 
