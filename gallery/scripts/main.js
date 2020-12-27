@@ -30,21 +30,17 @@ resume.onclick = function() {
 /* || Gallery */
 var portrait_header = document.getElementById('portrait-header');
 var landscape_header = document.getElementById('landscape-header');
+var portraits_section = document.getElementById('portraits-section');
+var landscapes_section = document.getElementById('landscapes-section');
 
 portrait_header.onclick = function() {
-    // window.scrollTo(0, 1300);
-    var top = portrait_header.style.top;
-    console.log(top);
-    top.replace("px", "");
-    console.log(top);
-    top = Number(top);
-    console.log(typeof top);
-    console.log(top);
-    window.scrollTo(0, portrait_header.style.top);
+    var top = parseInt(getComputedStyle(portraits_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
 }
 
 landscape_header.onclick = function() {
-    window.scrollTo(0, 2520);
+    var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
 }
 
 
@@ -69,11 +65,13 @@ footer_gallery.onclick = function() {
 }
 
 footer_portrait.onclick = function() {
-    window.scrollTo(0, 1300);
+    var top = parseInt(getComputedStyle(portraits_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
 }
 
 footer_landscape.onclick = function() {
-    window.scrollTo(0, 2520);
+    var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
 }
 
 footer_more.onclick = function() {
