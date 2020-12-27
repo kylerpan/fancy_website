@@ -32,7 +32,15 @@ var portrait_header = document.getElementById('portrait-header');
 var landscape_header = document.getElementById('landscape-header');
 
 portrait_header.onclick = function() {
-    window.scrollTo(0, 1300);
+    // window.scrollTo(0, 1300);
+    var top = portrait_header.style.top;
+    console.log(top);
+    top.replace("px", "");
+    console.log(top);
+    top = Number(top);
+    console.log(typeof top);
+    console.log(top);
+    window.scrollTo(0, portrait_header.style.top);
 }
 
 landscape_header.onclick = function() {
