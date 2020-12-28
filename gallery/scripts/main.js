@@ -48,9 +48,12 @@ landscape_header.onclick = function() {
 var footer_logo = document.getElementById('footer-logo');
 var footer_about_me = document.getElementById('footer-about-me');
 var footer_gallery = document.getElementById('footer-gallery');
+var footer_more = document.getElementById('footer-more');
+var footer_education = document.getElementById('footer-education');
+var footer_hobbies = document.getElementById('footer-hobbies');
+var footer_projects = document.getElementById('footer-projects');
 var footer_portrait = document.getElementById('footer-portrait');
 var footer_landscape = document.getElementById('footer-landscape');
-var footer_more = document.getElementById('footer-more');
 
 footer_logo.onclick = function() {
     window.location.href = "/index.html";
@@ -64,6 +67,28 @@ footer_gallery.onclick = function() {
     window.scrollTo(0, 0);
 }
 
+footer_more.onclick = function() {
+    console.log("hi");
+}
+
+footer_education.onclick = function() {
+    window.location.href = "/about_me";
+    var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
+}
+
+footer_hobbies.onclick = function() {
+    window.location.href = "/about_me";
+    var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
+}
+
+footer_projects.onclick = function() {
+    window.location.href = "/about_me";
+    var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
+    window.scrollTo(0, top + 100);
+}
+
 footer_portrait.onclick = function() {
     var top = parseInt(getComputedStyle(portraits_section).getPropertyValue("top"));
     window.scrollTo(0, top + 100);
@@ -72,10 +97,6 @@ footer_portrait.onclick = function() {
 footer_landscape.onclick = function() {
     var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
     window.scrollTo(0, top + 100);
-}
-
-footer_more.onclick = function() {
-    console.log("hi");
 }
 
 

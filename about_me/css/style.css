@@ -4,6 +4,7 @@ html {
     min-height: 100vh;
     height: auto;
     width: 100vw;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -213,15 +214,15 @@ body {
     cursor: pointer;
 }
 
-#education {
+#education-header {
     top: 540px;
 }
 
-#hobbies {
+#hobbies-header {
     top: 580px;
 }
 
-#projects {
+#projects-header {
     top: 620px;
 }
 
@@ -299,50 +300,57 @@ body {
     cursor: pointer;
 }
 
-#footer-about-me {
+.footer-headers {
     color: rgb(50, 50, 50);    
     margin: 0;
     font-size: 13px;
-    grid-column-start: 4;
     cursor: pointer;
+}
+
+#footer-about-me {
+    grid-column-start: 4;
 }
 
 #footer-gallery {
-    color: rgb(50, 50, 50);
-    margin: 0;
-    font-size: 13px;
     grid-column-start: 5;
-    cursor: pointer;
-}
-
-#footer-portrait {
-    color: rgb(71, 71, 71);
-    margin: 0;
-    font-size: 13px;
-    text-decoration: underline;
-    grid-column-start: 5;
-    grid-row-start: 2;
-    cursor: pointer;
-}
-
-#footer-landscape {
-    color: rgb(71, 71, 71);
-    margin: 0;
-    font-size: 13px;
-    text-decoration: underline;
-    grid-column-start: 5;
-    grid-row-start: 3;
-    cursor: pointer;
 }
 
 #footer-more {
-    color: rgb(50, 50, 50);
+    grid-column-start: 6;
+}
+
+.footer-sections {
+    color: rgb(71, 71, 71);
     margin: 0;
     font-size: 13px;
-    grid-column-start: 6;
+    text-decoration: underline;
     cursor: pointer;
 }
 
+#footer-education {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+#footer-hobbies {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+#footer-projects {
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+
+#footer-portrait {
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+#footer-landscape {
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
 
 
 @keyframes drop_down_forward {
