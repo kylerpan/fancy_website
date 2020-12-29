@@ -88,10 +88,8 @@ footer_projects.onclick = function() {
 
 footer_portrait.onclick = function() {
     window.location.href = "/gallery";
-    window.scrollTo(0, 1300);
 }
 
 footer_landscape.onclick = function() {
     window.location.href = "/gallery";
-    window.scrollTo(0, 2520);
 }

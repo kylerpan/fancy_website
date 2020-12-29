@@ -49,28 +49,20 @@ footer_more.onclick = function() {
 
 footer_education.onclick = function() {
     window.location.href = "/about_me";
-    var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
 }
 
 footer_hobbies.onclick = function() {
     window.location.href = "/about_me";
-    var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
 }
 
 footer_projects.onclick = function() {
     window.location.href = "/about_me";
-    var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
 }
 
 footer_portrait.onclick = function() {
     window.location.href = "/gallery";
-    window.scrollTo(0, 1300);
 }
 
 footer_landscape.onclick = function() {
     window.location.href = "/gallery";
-    window.scrollTo(0, 2520);
 }
