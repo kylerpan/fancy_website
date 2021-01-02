@@ -69,6 +69,7 @@ body {
 }
 
 #red {
+    z-index: 1;
     background-color: rgb(242, 64, 52);
 }
 
@@ -305,29 +306,49 @@ body {
     top: 1650px;
     left: calc(50vw - 460px - 7.5px + 40px);
     height: 600px;
-    width: 350px;
+    width: 380px;
 }
 
 .block-title {
     position: absolute;
     font-family: Apercu Bold;
     top: 30px;
-    left: calc(50% - 52.5px);
+    left: calc(50% - 100px);
     font-size: 20px;
     color: rgb(242, 64, 52);
 }
 
-.block-border {
+.block-text {
     position: absolute;
-    top: 1630px;
-    left: calc(50vw - 460px - 7.5px + 380px);
+    font-family: Apercu Bold;
+    top: 60px;
+    left: calc(50% - 150px);
+    font-size: 30px;
+    color: black;
 }
 
-.block-border-path {
+.block-side-border {
+    position: absolute;
+    top: 1630px;
+    left: calc(50vw - 460px - 7.5px + 410px);
+    height: 700px;
+    width: 450px;
+}
+
+.block-side-border-path {
     z-index: 0;
     fill: none;
     stroke: rgb(242, 64, 52);
-    stroke-width: 3;
+    stroke-width: 5;
+}
+
+.block-side-title {
+    position: absolute;
+    font-family: Apercu Bold;
+    top: 30px;
+    left: calc(50% - 100px);
+    font-size: 20px;
+    color: rgb(242, 64, 52);
 }
 
 /* || Footer */

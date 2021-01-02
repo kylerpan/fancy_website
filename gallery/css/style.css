@@ -70,6 +70,7 @@ body {
 }
 
 #orange {
+    z-index: 1;
     background-color: rgb(255, 171, 64);
 }
 
