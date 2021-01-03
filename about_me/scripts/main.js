@@ -3,6 +3,7 @@ var logo = document.getElementById('logo');
 var about_me = document.getElementById('about-me');
 var gallery = document.getElementById('gallery');
 var more = document.getElementById('more');
+var resume = document.getElementsByClassName('drop-down-tabs')[0];
 
 
 logo.onclick = function() {
@@ -20,6 +21,11 @@ gallery.onclick = function() {
 more.onclick = function() {
     console.log("hi");
 }
+
+resume.onclick = function() {
+    window.open("/assets/resume.pdf");
+}
+
 
 /* || About Me */
 var education_header = document.getElementById('education-header');

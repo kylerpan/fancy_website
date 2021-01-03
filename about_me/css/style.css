@@ -318,9 +318,9 @@ body {
 .block-text {
     position: absolute;
     font-family: Apercu Bold;
-    line-height: 150%;
+    line-height: 170%;
     width: 250px;
-    top: 60px;
+    top: 70px;
     left: calc(50% - 120px);
     font-size: 30px;
     color: black;
@@ -351,11 +351,13 @@ body {
 
 .block-side-text {
     position: absolute;
-    font-family: Apercu Pro;
+    font-family: Apercu Mono;
+    line-height: 170%;
     width: 300px;
     top: 60px;
     left: calc(50% - 150px);
     font-size: 25px;
+    color: rgb(50, 50, 50);
 }
 
 #education-picture {
