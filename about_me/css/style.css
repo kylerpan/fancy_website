@@ -282,17 +282,15 @@ body {
     height: 350px;
     width: 800px;
     position: absolute;
-    top: 1200px;
     left: calc(50vw - 400px)
 }
 
-#picture-border {
+.picture-border {
     position: absolute;
-    top: 1200px;
     left: calc(50vw - 400px)
 }
 
-#picture-border-path {
+.picture-border-path {
     fill: none;
     stroke: rgb(242, 64, 52);
     stroke-width: 3;
@@ -303,7 +301,6 @@ body {
     background-color: white;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 1650px;
     left: calc(50vw - 460px - 7.5px + 40px);
     height: 600px;
     width: 380px;
@@ -313,7 +310,7 @@ body {
     position: absolute;
     font-family: Apercu Bold;
     top: 30px;
-    left: calc(50% - 100px);
+    left: calc(50% - 120px);
     font-size: 20px;
     color: rgb(242, 64, 52);
 }
@@ -321,15 +318,16 @@ body {
 .block-text {
     position: absolute;
     font-family: Apercu Bold;
+    line-height: 150%;
+    width: 250px;
     top: 60px;
-    left: calc(50% - 150px);
+    left: calc(50% - 120px);
     font-size: 30px;
     color: black;
 }
 
 .block-side-border {
     position: absolute;
-    top: 1630px;
     left: calc(50vw - 460px - 7.5px + 410px);
     height: 700px;
     width: 450px;
@@ -346,9 +344,66 @@ body {
     position: absolute;
     font-family: Apercu Bold;
     top: 30px;
-    left: calc(50% - 100px);
+    left: calc(50% - 150px);
     font-size: 20px;
     color: rgb(242, 64, 52);
+}
+
+.block-side-text {
+    position: absolute;
+    font-family: Apercu Pro;
+    width: 300px;
+    top: 60px;
+    left: calc(50% - 150px);
+    font-size: 25px;
+}
+
+#education-picture {
+    top: 1200px;
+}
+
+#education-picture-border {
+    top: 1200px;
+}
+
+#education-white-block {
+    top: 1650px;
+}
+
+#education-block-side-border {
+    top: 1630px;
+}
+
+#hobbies-picture {
+    top: 2420px;
+}
+
+#hobbies-picture-border {
+    top: 2420px;
+}
+
+#hobbies-white-block {
+    top: 2870px;
+}
+
+#hobbies-block-side-border {
+    top: 2850px;
+}
+
+#projects-picture {
+    top: 3640px;
+}
+
+#projects-picture-border {
+    top: 3640px;
+}
+
+#projects-white-block {
+    top: 4090px;
+}
+
+#projects-block-side-border {
+    top: 4070px;
 }
 
 /* || Footer */
