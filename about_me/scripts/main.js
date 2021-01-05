@@ -37,17 +37,17 @@ var projects_section = document.getElementById('projects-section');
 
 education_header.onclick = function() {
     var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 hobbies_header.onclick = function() {
     var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 projects_header.onclick = function() {
     var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 /* || Footer */
@@ -79,17 +79,17 @@ footer_more.onclick = function() {
 
 footer_education.onclick = function() {
     var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 footer_hobbies.onclick = function() {
     var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 footer_projects.onclick = function() {
     var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    window.scrollTo(0, top - 100);
 }
 
 footer_portrait.onclick = function() {
