@@ -277,17 +277,22 @@ body {
     top: 4190px;
 }
 
-.pictures {
-    z-index: 0;
+.white-box {
+    position: absolute;
+    background-color: white;
     height: 350px;
     width: 800px;
+    left: calc(50vw - 400px);
+}
+
+.pictures {
+    z-index: 0;
     position: absolute;
-    left: calc(50vw - 400px)
 }
 
 .picture-border {
     position: absolute;
-    left: calc(50vw - 400px)
+    left: calc(50vw - 400px);
 }
 
 .picture-border-path {
@@ -361,6 +366,11 @@ body {
 }
 
 #education-picture {
+    top: 1245px;
+    left: calc(50vw - 313px);
+}
+
+#education-white-box {
     top: 1250px;
 }
 
@@ -377,6 +387,12 @@ body {
 }
 
 #hobbies-picture {
+    width: 500px;
+    top: 2630px;
+    left: calc(50vw - 250px)
+}
+
+#hobbies-white-box {
     top: 2570px;
 }
 
@@ -393,6 +409,12 @@ body {
 }
 
 #projects-picture {
+    width: 500px;
+    top: 4210px;
+    left: calc(50vw - 250px);
+}
+
+#projects-white-box {
     top: 4190px;
 }
 
