@@ -25,6 +25,15 @@ resume.onclick = function() {
     window.open("/assets/resume.pdf");
 }
 
+/* || Home */
+var arrow = document.getElementById('arrow');
+var inspiration = document.getElementById('inspiration');
+
+arrow.onclick = function() {
+    var top = parseInt(getComputedStyle(inspiration).getPropertyValue("top"));
+    window.scrollTo(0, top - 100);
+}
+
 /* || Footer */
 var footer_logo = document.getElementById('footer-logo');
 var footer_about_me = document.getElementById('footer-about-me');
