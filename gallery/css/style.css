@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     /* min-height: 100vh; */
-    height: 5200px;
+    height: 5400px;
     width: 100vw;
     display: block;
 }
@@ -274,7 +274,26 @@ body {
 }
 
 #landscapes-section {
-    top: 2420px;
+    top: 2520px;
+}
+
+.picture-border {
+    position: absolute;
+    left: calc(50vw - 500px);
+}
+
+.picture-border-path {
+    fill: none;
+    stroke: rgb(255, 171, 64);
+    stroke-width: 5;
+}
+
+#portrait-picture-border {
+    top: 1300px;
+}
+
+#landscape-picture-border {
+    top: 2620px;
 }
 
 .image-wrapper {
@@ -294,7 +313,7 @@ body {
 }
 
 .landscapes-image-wrapper {
-    top: 2740px;
+    top: 2840px;
 }
 
 .column_1 {
