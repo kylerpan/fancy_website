@@ -435,7 +435,7 @@ body {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     z-index: 1;
     background-color: white;
-    width: 600px;
+    width: 500px;
     height: 250px;
     left: calc(50vw - 460px - 7.5px + 40px);
     top: 5750px; 
@@ -449,10 +449,17 @@ body {
     color: rgb(242, 64, 52);
 }
 
-#github-block-border {
+#animated-block {
     position: absolute;
     top: 110px;
     left: 70px;
+    cursor: pointer;
+}
+
+#github-block-border {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #github-block-border-path {
@@ -465,10 +472,21 @@ body {
 #github-page {
     position: absolute;
     text-decoration: none;
-    top: 135px;
-    left: 120px;
+    width: 300px;
+    top: 5px;
+    left: 50px;
     font-size: 20px;
     color: rgb(242, 64, 52);
+}
+
+#animated-block:hover #github-block-border-path {
+    transition: 1s;
+    d: path(" M360, 50 v-50 h-360 v80 h360 v-30");
+    fill: rgb(242, 64, 52);
+}
+
+#animated-block:hover #github-page {
+    color: white;
 }
 
 /* || Footer */
