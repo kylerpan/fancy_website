@@ -566,6 +566,22 @@ body {
     grid-row-start: 3;
 }
 
+#footer-link {
+    grid-column-start: 1;
+    grid-row-start: 10;
+    cursor: default;
+}
+
+#link {
+    position: absolute;
+    bottom: 32px;
+    left: 155px;
+    color: rgb(50, 50, 50);    
+    margin: 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
 
 @keyframes drop_down_forward {
     from {
