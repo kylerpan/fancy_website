@@ -318,6 +318,31 @@ body {
     cursor: pointer;
 }
 
+#socials {
+    grid-column-start: 6;
+    grid-row-start: 9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.socials-icons {
+    height: 40px;
+    cursor: pointer;
+}
+
+#github {
+    grid-column-start: 1;
+}
+
+#facebook {
+    grid-column-start: 2;
+}
+
+#instagram {
+    grid-column-start: 3;
+}
+
 
 
 @keyframes drop_down_forward {
