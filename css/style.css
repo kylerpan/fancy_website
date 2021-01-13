@@ -327,19 +327,26 @@ body {
 }
 
 .socials-icons {
+    position: relative;
     height: 40px;
     cursor: pointer;
+    justify-self: center;
 }
 
 #github {
+    top: 11px;
+    height: 43px;
     grid-column-start: 1;
 }
 
 #facebook {
+    top: 12px;
     grid-column-start: 2;
 }
 
 #instagram {
+    top: 10px;
+    height: 45px;
     grid-column-start: 3;
 }
 
