@@ -54,6 +54,9 @@ var footer_hobbies = document.getElementById('footer-hobbies');
 var footer_projects = document.getElementById('footer-projects');
 var footer_portrait = document.getElementById('footer-portrait');
 var footer_landscape = document.getElementById('footer-landscape');
+var github_icon = document.getElementById('github');
+var facebook_icon = document.getElementById('facebook');
+var instagram_icon = document.getElementById('instagram');
 
 footer_logo.onclick = function() {
     window.location.href = "/index.html";
@@ -94,6 +97,18 @@ footer_portrait.onclick = function() {
 footer_landscape.onclick = function() {
     var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
     window.scrollTo(0, top + 100);
+}
+
+github_icon.onclick = function() {
+    window.open("https://github.com/kylerpan")
+}
+
+facebook_icon.onclick = function() {
+    window.open("https://www.facebook.com/kyle.pan.735")
+}
+
+instagram_icon.onclick = function() {
+    window.open("https://www.instagram.com/kyle_pan_/")
 }
 
 

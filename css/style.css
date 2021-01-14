@@ -329,6 +329,7 @@ body {
 .socials-icons {
     position: relative;
     height: 40px;
+    width: auto;
     cursor: pointer;
     justify-self: center;
 }
