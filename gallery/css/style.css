@@ -1,20 +1,19 @@
 html {
     margin: 0;
     padding: 0;
-    /* min-height: 100vh;
-    height: auto; */
+    min-height: 100vh;
+    height: auto;
     width: 100vw;
     scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
     overflow-y: auto;
     overflow-x: hidden;
     font-family: Apercu Pro;
+    position: relative;
     margin: 0;
     padding: 0;
-    /* min-height: 100vh; */
     height: 5400px;
     width: 100vw;
     display: block;
@@ -90,16 +89,16 @@ body {
 #header {
     margin: 0;
     height: 80px;
+    width: calc(100vw - 15px);
     display: block;
     align-content: end;
-    width: calc(100vw - 15px);
 }
 
 .header-tabs {
     color: white;
-    font-size: 13px;
     margin: 0;
     top: 60px;
+    font-size: 13px;
     height: 20px;
     cursor: pointer;
 }
@@ -124,10 +123,10 @@ body {
 
 #more-drop-down {
     position: relative;
-    display: inline-block;
-    width: 45px;
     top: 56px;
     left: calc(100vw - 160px);
+    width: 45px;
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -139,33 +138,33 @@ body {
 
 #more-area {
     z-index: 1;
-    display: none;
     position: absolute;
     top: -70px;
     left: -54.406px;
     height: 100px;
     width: 150px;
+    display: none;
 }
   
 #more-content {
     z-index: 2;
-    display: none;
+    background-color: white;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
     position: absolute;
-    margin: 20px 0 0 0;
     top: -78px;
     left: -54.406px;
-    background-color: white;
+    margin: 20px 0 0 0;
+    padding: 15px 0 15px 0;
     height: 100px;
     width: 150px;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
-    padding: 15px 0 15px 0;
+    display: none;
 }
 
 .drop-down-tabs {
     z-index: 4;
     font-family: Apercu Mono;
-    font-size: 13px;
     margin: 15px 10px 10px 25px;
+    font-size: 13px;
 }
 
 #gallery-drop-down:hover #gallery-content, #gallery-drop-down:hover #gallery-area{
@@ -185,18 +184,18 @@ body {
 /* || Content */
 #body-wrapper {
     margin: 0;
-    display: grid;
     height: 100vh;
     width: calc(100vw - 15px);
+    display: grid;
 }
 
 #greating {
     color: white;
     font-family: Apercu Pro;
-    font-size: 75px;
     position: absolute;
     top: 80px;
     left: calc(50vw - 460px - 7.5px - 140px);
+    font-size: 75px;
     height: 100px;
 }
 
@@ -209,10 +208,10 @@ body {
 }
 .section-header {
     color: white;
-    font-size: 18px;
-    text-decoration: underline;
     position: absolute;
     left: calc(50vw - 460px - 7.5px - 140px);
+    font-size: 18px;
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -248,10 +247,10 @@ body {
     position: absolute;
     top: 62px;
     left: -1px;
-    transform: rotate(45deg);
-    transform-origin: 50% 100%;
     height: 12px;
-    width: 12px;    
+    width: 12px;
+    transform: rotate(45deg);
+    transform-origin: 50% 100%;    
 }
 
 #warning {
@@ -265,8 +264,8 @@ body {
 .sections {
     color: rgb(255, 171, 64);
     position: absolute;
-    font-size: 144px;
     left: calc(50vw - 460px - 7.5px - 65px);
+    font-size: 144px;
 }
 
 #portraits-section {
@@ -298,10 +297,8 @@ body {
 
 .image-wrapper {
     position: absolute;
-    /* left: calc(50vw - 85% / 2 - 6.5px); */
     left: calc(50vw - 1200px / 2 - 6.5px);
     height: auto;
-    /* width: 85%; */
     width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -351,14 +348,13 @@ img {
 
 /* || Footer */
 #footer {
+    background-color: rgb(235, 235, 235);
     position: absolute;
     bottom: 0;
-    background-color: rgb(235, 235, 235);
     margin: 0;
+    padding: 60px 56px 20px 40px;
     height: 300px;
     width: calc(100vw - 96px);
-    /* margin: 50px 20px 20px 20px; */
-    padding: 60px 56px 20px 40px;
     display: grid;
     grid-template-columns: 300px repeat(5, 1fr);
     grid-template-rows: repeat(10, 30px);
@@ -433,10 +429,10 @@ img {
 }
 
 #link {
+    color: rgb(50, 50, 50);   
     position: absolute;
     bottom: 32px;
-    left: 155px;
-    color: rgb(50, 50, 50);    
+    left: 155px; 
     margin: 0;
     font-size: 13px;
     cursor: pointer;
