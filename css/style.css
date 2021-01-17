@@ -222,6 +222,55 @@ body {
     width: calc(100vw - 400px);
 }
 
+#about-me-section {
+    top: 1850px;
+}
+
+.section-header {
+    position: absolute;
+    font-size: 17px;
+    left: 200px;
+}
+
+.divider {
+    position: absolute;
+    left: 200px;
+}
+
+.divider-path {
+    fill: none;
+    stroke: rgb(242, 64, 52);
+    stroke-width: 2;
+}
+
+#about-me-divider {
+    top: 1880px;
+}
+
+#about-me-title {
+    top: 1880px;
+}
+
+.section-title {
+    color: rgb(242, 64, 52);
+    position: absolute;
+    font-size: 90px;
+    left: 200px;
+}
+
+#about-me-background {
+    top: 1500px;
+}
+
+.background-text {
+    z-index: 0;
+    color: rgb(251, 251, 251);
+    position: absolute;
+    margin: 0;
+    font-size: 500px;
+    left: 210px;
+}
+
 /* || Footer */
 #footer {
     background-color: rgb(235, 235, 235);
