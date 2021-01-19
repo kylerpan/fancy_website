@@ -269,6 +269,66 @@ body {
     margin: 0;
     font-size: 500px;
     left: 210px;
+    cursor: default;
+}
+
+.section-text {
+    font-size: 30px;
+    position: absolute;
+    left: 205px;
+}
+
+#about-me-text {
+    top: 2100px;
+}
+
+.block {
+    position: absolute;
+    left: 205px;
+    cursor: pointer;
+}
+
+#about-me-block {
+    top: 2250px;
+}
+
+.block-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.block-border-path {
+    z-index: 1;
+    fill: none;
+    stroke-width: 5;
+}
+
+#about-me-path {
+    stroke: rgb(242, 64, 52);
+}
+
+.block-text {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    width: 300px;
+}
+
+#about-me-block-text {
+    color: rgb(242, 64, 52);
+}
+
+#about-me-block:hover #about-me-path {
+    transition: 1s;
+    d: path(" M290, 50 v-50 h-290 v80 h290 v-30");
+    fill: rgb(242, 64, 52);
+}
+
+#about-me-block:hover #about-me-block-text {
+    color: white;
 }
 
 /* || Footer */

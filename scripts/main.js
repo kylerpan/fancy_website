@@ -28,10 +28,15 @@ resume.onclick = function() {
 /* || Home */
 var arrow = document.getElementById('arrow');
 var inspiration = document.getElementById('inspiration');
+var about_me_block_text = document.getElementById('about-me-block-text');
 
 arrow.onclick = function() {
     var top = parseInt(getComputedStyle(inspiration).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
+}
+
+about_me_block_text.onclick = function() {
+    window.location.href = "/about_me";
 }
 
 /* || Footer */
