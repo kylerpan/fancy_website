@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    height: 3000px;
+    height: 4000px;
     width: 100vw;
     display: block;
 }
@@ -222,8 +222,14 @@ body {
     width: calc(100vw - 400px);
 }
 
-#about-me-section {
-    top: 1850px;
+.background-text {
+    z-index: 0;
+    color: rgb(251, 251, 251);
+    position: absolute;
+    margin: 0;
+    font-size: 500px;
+    left: 210px;
+    cursor: default;
 }
 
 .section-header {
@@ -239,37 +245,13 @@ body {
 
 .divider-path {
     fill: none;
-    stroke: rgb(242, 64, 52);
     stroke-width: 2;
 }
 
-#about-me-divider {
-    top: 1880px;
-}
-
-#about-me-title {
-    top: 1880px;
-}
-
 .section-title {
-    color: rgb(242, 64, 52);
     position: absolute;
     font-size: 90px;
     left: 200px;
-}
-
-#about-me-background {
-    top: 1500px;
-}
-
-.background-text {
-    z-index: 0;
-    color: rgb(251, 251, 251);
-    position: absolute;
-    margin: 0;
-    font-size: 500px;
-    left: 210px;
-    cursor: default;
 }
 
 .section-text {
@@ -278,18 +260,10 @@ body {
     left: 205px;
 }
 
-#about-me-text {
-    top: 2100px;
-}
-
 .block {
     position: absolute;
     left: 205px;
     cursor: pointer;
-}
-
-#about-me-block {
-    top: 2250px;
 }
 
 .block-border {
@@ -304,10 +278,6 @@ body {
     stroke-width: 5;
 }
 
-#about-me-path {
-    stroke: rgb(242, 64, 52);
-}
-
 .block-text {
     position: absolute;
     top: 5px;
@@ -317,8 +287,78 @@ body {
     width: 300px;
 }
 
+#about-me-background {
+    top: 1500px;
+}
+
+#about-me-section {
+    top: 1850px;
+}
+
+#about-me-divider {
+    top: 1880px;
+}
+
+#about-me-divider-path {
+    stroke: rgb(242, 64, 52);
+}
+
+#about-me-title {
+    color: rgb(242, 64, 52);
+    top: 1880px;
+}
+
+#about-me-text {
+    top: 2100px;
+}
+
+#about-me-block {
+    top: 2250px;
+}
+
+#about-me-path {
+    stroke: rgb(242, 64, 52);
+}
+
 #about-me-block-text {
     color: rgb(242, 64, 52);
+}
+
+#gallery-background {
+    top: 2700px;
+}
+
+#gallery-section {
+    top: 3050px;
+}
+
+#gallery-divider {
+    top: 3080px;
+}
+
+#gallery-divider-path {
+    stroke: rgb(255, 171, 64);
+}
+
+#gallery-title {
+    color: rgb(255, 171, 64);
+    top: 3080px;
+}
+
+#gallery-text {
+    top: 3300px;
+}
+
+#gallery-block {
+    top: 3450px;
+}
+
+#gallery-path {
+    stroke: rgb(255, 171, 64);
+}
+
+#gallery-block-text {
+    color: rgb(255, 171, 64);
 }
 
 #about-me-block:hover #about-me-path {
@@ -328,6 +368,16 @@ body {
 }
 
 #about-me-block:hover #about-me-block-text {
+    color: white;
+}
+
+#gallery-block:hover #gallery-path {
+    transition: 1s;
+    d: path(" M290, 50 v-50 h-290 v80 h290 v-30");
+    fill: rgb(255, 171, 64);
+}
+
+#gallery-block:hover #gallery-block-text {
     color: white;
 }
 
