@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    height: 4000px;
+    height: 5000px;
     width: 100vw;
     display: block;
 }
@@ -213,6 +213,70 @@ body {
     transform-origin: 50% 100%;
 }
 
+ul {
+    color: rgb(239, 239, 239);
+    position: absolute;
+    top: 1240px;
+    font-size: 10px;
+    line-height: 200%;
+}
+
+#a {
+    left: 160px;
+}
+
+#b {
+    left: 180px;
+}
+
+#c {
+    left: 200px;
+}
+
+#d {
+    left: 220px;
+}
+
+#e {
+    left: 240px;
+}
+
+#f {
+    left: 260px;
+}
+
+#g {
+    left: 280px;
+}
+
+#h {
+    left: 300px;
+}
+
+#i {
+    left: 320px;
+}
+
+#j {
+    left: 340px;
+}
+
+#k {
+    left: 360px;
+}
+
+#l {
+    left: 380px;
+}
+
+#m {
+    left: 400px;
+}
+
+#n {
+    left: 420px;
+}
+
 #inspiration {
     position: absolute;
     font-size: 40px;
@@ -222,6 +286,7 @@ body {
     width: calc(100vw - 400px);
 }
 
+/* || Sections */
 .background-text {
     z-index: 0;
     color: rgb(251, 251, 251);
@@ -288,15 +353,15 @@ body {
 }
 
 #about-me-background {
-    top: 1500px;
+    top: 1700px;
 }
 
 #about-me-section {
-    top: 1850px;
+    top: 2050px;
 }
 
 #about-me-divider {
-    top: 1880px;
+    top: 2080px;
 }
 
 #about-me-divider-path {
@@ -305,15 +370,15 @@ body {
 
 #about-me-title {
     color: rgb(242, 64, 52);
-    top: 1880px;
+    top: 2080px;
 }
 
 #about-me-text {
-    top: 2100px;
+    top: 2300px;
 }
 
 #about-me-block {
-    top: 2250px;
+    top: 2450px;
 }
 
 #about-me-path {
