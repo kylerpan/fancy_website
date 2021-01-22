@@ -216,74 +216,75 @@ body {
 ul {
     color: rgb(239, 239, 239);
     position: absolute;
-    top: 1240px;
+    top: 1220px;
     font-size: 10px;
     line-height: 200%;
 }
 
 #a {
-    left: 160px;
+    left: 80px;
 }
 
 #b {
-    left: 180px;
+    left: 100px;
 }
 
 #c {
-    left: 200px;
+    left: 120px;
 }
 
 #d {
-    left: 220px;
+    left: 140px;
 }
 
 #e {
-    left: 240px;
+    left: 160px;
 }
 
 #f {
-    left: 260px;
+    left: 180px;
 }
 
 #g {
-    left: 280px;
+    left: 200px;
 }
 
 #h {
-    left: 300px;
+    left: 220px;
 }
 
 #i {
-    left: 320px;
+    left: 240px;
 }
 
 #j {
-    left: 340px;
+    left: 260px;
 }
 
 #k {
-    left: 360px;
+    left: 280px;
 }
 
 #l {
-    left: 380px;
+    left: 300px;
 }
 
 #m {
-    left: 400px;
+    left: 320px;
 }
 
 #n {
-    left: 420px;
+    left: 340px;
 }
 
 #inspiration {
     position: absolute;
     font-size: 40px;
+    letter-spacing: 2px;
     line-height: 170%;
     top: 1250px;
-    left: 200px;
-    width: calc(100vw - 400px);
+    left: calc(50vw - 530px);
+    width: 1060px;
 }
 
 /* || Sections */
@@ -293,19 +294,20 @@ ul {
     position: absolute;
     margin: 0;
     font-size: 500px;
-    left: 210px;
+    left: 130px;
     cursor: default;
 }
 
 .section-header {
     position: absolute;
     font-size: 17px;
-    left: 200px;
+    letter-spacing: 2px;
+    left: 120px;
 }
 
 .divider {
     position: absolute;
-    left: 200px;
+    left: 120px;
 }
 
 .divider-path {
@@ -315,19 +317,20 @@ ul {
 
 .section-title {
     position: absolute;
-    font-size: 90px;
-    left: 200px;
+    font-size: 110px;
+    letter-spacing: 2px;
+    left: 120px;
 }
 
 .section-text {
     font-size: 30px;
     position: absolute;
-    left: 205px;
+    left: 125px;
 }
 
 .block {
     position: absolute;
-    left: 205px;
+    left: 125px;
     cursor: pointer;
 }
 
@@ -370,7 +373,7 @@ ul {
 
 #about-me-title {
     color: rgb(242, 64, 52);
-    top: 2080px;
+    top: 2060px;
 }
 
 #about-me-text {
@@ -407,7 +410,7 @@ ul {
 
 #gallery-title {
     color: rgb(255, 171, 64);
-    top: 3080px;
+    top: 3060px;
 }
 
 #gallery-text {
