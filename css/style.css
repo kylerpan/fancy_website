@@ -455,20 +455,29 @@ ul {
     position: absolute;
     bottom: 0;
     margin: 0;
-    padding: 60px 56px 20px 40px;
-    height: 300px;
-    width: calc(100vw - 96px);
-    display: grid;
-    grid-template-columns: 300px repeat(5, 1fr);
-    grid-template-rows: repeat(10, 30px);
-    text-align: start;
-    text-justify: start;
+    height: 400px;
+    width: 100vw;
 }    
+
+#footer-grid {
+    position: absolute;
+    top: 60px;
+    left: calc(50vw - 500px);
+    margin: 0;
+    height: 300px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 250px repeat(5, 150px);
+    grid-template-rows: repeat(10, 30px);
+    text-align: end;
+    text-justify: start;
+}
 
 #footer-logo {
     color: rgb(50, 50, 50);
     margin: 0;
     font-size: 25px;
+    text-align: start;
     grid-column-start: 1;
     cursor: pointer;
 }
@@ -526,6 +535,7 @@ ul {
 }
 
 #footer-link {
+    text-align: start;
     grid-column-start: 1;
     grid-row-start: 10;
     cursor: default;
@@ -534,8 +544,8 @@ ul {
 #link {
     color: rgb(50, 50, 50);   
     position: absolute;
-    bottom: 32px;
-    left: 155px; 
+    bottom: 12px;
+    left: 120px; 
     margin: 0;
     font-size: 13px;
     cursor: pointer;
@@ -553,7 +563,7 @@ ul {
     position: relative;
     height: 40px;
     width: auto;
-    justify-self: center;
+    justify-self: end;
     cursor: pointer;
 }
 
@@ -565,12 +575,13 @@ ul {
 
 #facebook {
     top: 12px;
+    left: -3px;
     grid-column-start: 2;
 }
 
 #instagram {
-    top: 10px;
-    height: 45px;
+    top: 11px;
+    height: 43px;
     grid-column-start: 3;
 }
 
