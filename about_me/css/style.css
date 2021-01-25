@@ -104,8 +104,9 @@ body {
 
 #logo {
     position: absolute;
+    font-size: 20px;
+    top: 55px;
     left: 30px;
-    width: 60px;
 }
 
 #about-me {
