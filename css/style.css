@@ -452,8 +452,8 @@ ul {
 
 .section-photo {
     position: absolute;
-    left: calc(50vw - 500px);
-    width: 1000px;
+    left: calc(50vw - 515px);
+    width: 1030px;
 }
 
 #about-me-photo {
@@ -462,6 +462,32 @@ ul {
 
 #gallery-photo {
     top: 4700px;
+}
+
+.section-photo-path {
+    z-index: 1;
+    fill: none;
+    stroke-width: 2.5;
+}
+
+#about-me-photo-border {
+    position: absolute;
+    top: 2600px;
+    left: calc(50vw - 515px);
+}
+
+#about-me-photo-path {
+    stroke: rgb(242, 64, 52);
+}
+
+#gallery-photo-border {
+    position: absolute;
+    top: 4700px;
+    left: calc(50vw - 515px);
+}
+
+#gallery-photo-path {
+    stroke: rgb(255, 171, 64);
 }
 
 /* || Footer */
