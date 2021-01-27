@@ -1,3 +1,11 @@
+:root {
+    --red: rgb(242, 64, 52);
+    --orange: rgb(255, 171, 64);
+    --notes: 1220px;
+    --about-me: 1700px;
+    --gallery: 3900px;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -171,7 +179,7 @@ body {
 }
 
 #greating {
-    color: rgb(242, 64, 52);
+    color: var(--red);
     font-family: Apercu Pro;
     margin: 0;
     font-size: 128px;
@@ -194,7 +202,7 @@ body {
 }
 
 #arrow-1 {
-    background-color: rgb(242, 64, 52);
+    background-color: var(--red);
     position: absolute;
     top: calc(290px + 50vh);
     left: calc(50vw - 8px);
@@ -203,8 +211,8 @@ body {
 }
 
 #arrow-2 {  
-    border-bottom: solid 2px rgb(242, 64, 52);
-    border-right: solid 2px rgb(242, 64, 52);
+    border-bottom: solid 2px var(--red);
+    border-right: solid 2px var(--red);
     position: absolute;
     top: calc(313px + 50vh);
     left: calc(50vw - 19px);
@@ -214,68 +222,76 @@ body {
     transform-origin: 50% 100%;
 }
 
+#notes {
+    position: absolute;
+    top: var(--notes);
+    left: 80px;
+    height: auto;
+    width: calc(100vw - 200px);
+}
+
 ul {
     color: rgb(239, 239, 239);
     position: absolute;
-    top: 1220px;
+    top: 0;
     font-size: 10px;
     line-height: 200%;
 }
 
 #a {
-    left: 80px;
+    left: 0;
 }
 
 #b {
-    left: 100px;
+    left: 20px;
 }
 
 #c {
-    left: 120px;
+    left: 40px;
 }
 
 #d {
-    left: 140px;
+    left: 60px;
 }
 
 #e {
-    left: 160px;
+    left: 80px;
 }
 
 #f {
-    left: 180px;
+    left: 100px;
 }
 
 #g {
-    left: 200px;
+    left: 120px;
 }
 
 #h {
-    left: 220px;
+    left: 140px;
 }
 
 #i {
-    left: 240px;
+    left: 160px;
 }
 
 #j {
-    left: 260px;
+    left: 180px;
 }
 
 #k {
-    left: 280px;
+    left: 200px;
 }
 
 #l {
-    left: 300px;
+    left: 220px;
 }
 
 #m {
-    left: 320px;
+    left: 240px;
 }
 
 #n {
-    left: 340px;
+    left: 260px;
 }
 
 #inspiration {
@@ -283,8 +299,8 @@ ul {
     font-size: 40px;
     letter-spacing: 2px;
     line-height: 170%;
-    top: 1250px;
-    left: calc(50vw - 530px);
+    top: 30px;
+    left: calc(50vw - 610px);
     width: 1060px;
 }
 
@@ -295,7 +311,8 @@ ul {
     position: absolute;
     margin: 0;
     font-size: 500px;
-    left: 130px;
+    top: 0px;
+    left: 10px;
     cursor: default;
 }
 
@@ -303,12 +320,14 @@ ul {
     position: absolute;
     font-size: 17px;
     letter-spacing: 2px;
-    left: 120px;
+    top: 350px;
+    left: 0px;
 }
 
 .divider {
     position: absolute;
-    left: 120px;
+    top: 380px;
+    left: 0px;
 }
 
 .divider-path {
@@ -318,27 +337,30 @@ ul {
 
 .section-title {
     position: absolute;
+    top: 360px;
+    left: 0px;
     font-size: 110px;
     letter-spacing: 2px;
-    left: 120px;
 }
 
 .section-text {
-    font-size: 30px;
     position: absolute;
-    left: 125px;
+    top: 600px;
+    left: 5px;
+    font-size: 30px;
 }
 
 .block {
     position: absolute;
-    left: 125px;
+    top: 750px;
+    left: 5px;
     cursor: pointer;
 }
 
 .block-border {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
 }
 
 .block-border-path {
@@ -356,84 +378,84 @@ ul {
     width: 300px;
 }
 
-#about-me-background {
-    top: 1700px;
+.section-photo {
+    position: absolute;
+    top: 900px;
+    left: calc(50vw - 635px);
+    width: 1030px;
 }
 
-#about-me-section {
-    top: 2050px;
+.photo-border {
+    position: absolute;
+    top: 900px;
+    left: calc(50vw - 635px);
 }
 
-#about-me-divider {
-    top: 2080px;
+.section-photo-path {
+    z-index: 1;
+    fill: none;
+    stroke-width: 2.5;
+}
+
+#about-me-group {
+    position: absolute;
+    top: var(--about-me);
+    left: 120px;
+    width: calc(100vw - 200px);
 }
 
 #about-me-divider-path {
-    stroke: rgb(242, 64, 52);
+    stroke: var(--red);
 }
 
 #about-me-title {
-    color: rgb(242, 64, 52);
-    top: 2060px;
-}
-
-#about-me-text {
-    top: 2300px;
-}
-
-#about-me-block {
-    top: 2450px;
+    color: var(--red);
 }
 
 #about-me-path {
-    stroke: rgb(242, 64, 52);
+    stroke: var(--red);
 }
 
 #about-me-block-text {
-    color: rgb(242, 64, 52);
+    color: var(--red);
 }
 
-#gallery-background {
-    top: 3800px;
+#about-me-photo-path {
+    stroke: var(--red);
 }
 
-#gallery-section {
-    top: 4150px;
-}
-
-#gallery-divider {
-    top: 4180px;
+#gallery-group {
+    position: absolute;
+    top: var(--gallery);
+    left: 120px;
+    width: calc(100vw - 200px);
 }
 
 #gallery-divider-path {
-    stroke: rgb(255, 171, 64);
+    stroke: var(--orange);
 }
 
 #gallery-title {
-    color: rgb(255, 171, 64);
-    top: 4160px;
-}
-
-#gallery-text {
-    top: 4400px;
-}
-
-#gallery-block {
-    top: 4550px;
+    color: var(--orange);
 }
 
 #gallery-path {
-    stroke: rgb(255, 171, 64);
+    stroke: var(--orange);
 }
 
 #gallery-block-text {
-    color: rgb(255, 171, 64);
+    color: var(--orange);
 }
+
+#gallery-photo-path {
+    stroke: var(--orange);
+}
+
 
 #about-me-block:hover #about-me-path {
     transition: 1s;
     d: path(" M290, 50 v-50 h-290 v80 h290 v-30");
-    fill: rgb(242, 64, 52);
+    fill: var(--red);
 }
 
 #about-me-block:hover #about-me-block-text {
@@ -443,51 +465,11 @@ ul {
 #gallery-block:hover #gallery-path {
     transition: 1s;
     d: path(" M290, 50 v-50 h-290 v80 h290 v-30");
-    fill: rgb(255, 171, 64);
+    fill: var(--orange);
 }
 
 #gallery-block:hover #gallery-block-text {
     color: white;
-}
-
-.section-photo {
-    position: absolute;
-    left: calc(50vw - 515px);
-    width: 1030px;
-}
-
-#about-me-photo {
-    top: 2600px;
-}
-
-#gallery-photo {
-    top: 4700px;
-}
-
-.section-photo-path {
-    z-index: 1;
-    fill: none;
-    stroke-width: 2.5;
-}
-
-#about-me-photo-border {
-    position: absolute;
-    top: 2600px;
-    left: calc(50vw - 515px);
-}
-
-#about-me-photo-path {
-    stroke: rgb(242, 64, 52);
-}
-
-#gallery-photo-border {
-    position: absolute;
-    top: 4700px;
-    left: calc(50vw - 515px);
-}
-
-#gallery-photo-path {
-    stroke: rgb(255, 171, 64);
 }
 
 /* || Footer */
