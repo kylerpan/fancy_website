@@ -1,3 +1,10 @@
+:root {
+    --red: rgb(242, 64, 52);
+    --education: 1250px;
+    --hobbies: 2570px;
+    --projects: 4190px;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -69,7 +76,7 @@ body {
 
 #red {
     z-index: 1;
-    background-color: rgb(242, 64, 52);
+    background-color: var(--red);
 }
 
 .color-lines {
@@ -257,30 +264,21 @@ body {
     transform-origin: 50% 100%;
 }
 
+/* || Sections */
 .sections {
     z-index: 1;
-    color: rgb(242, 64, 52);
+    color: var(--red);
     position: absolute;
-    left: calc(50vw - 460px - 7.5px);
+    top: 0px;
+    left: calc(-60px - 7.5px);
     font-size: 100px;
-}
-
-#education-section {
-    top: 1250px;
-}
-
-#hobbies-section {
-    top: 2570px;
-}
-
-#projects-section {
-    top: 4190px;
 }
 
 .white-box {
     background-color: white;
     position: absolute;
-    left: calc(50vw - 400px);
+    top: 0px;
+    left: 0px;
     height: 350px;
     width: 800px;
 }
@@ -292,12 +290,13 @@ body {
 
 .picture-border {
     position: absolute;
-    left: calc(50vw - 400px);
+    top: 0px;
+    left: 0px;
 }
 
 .picture-border-path {
     fill: none;
-    stroke: rgb(242, 64, 52);
+    stroke: var(--red);
     stroke-width: 3;
 }
 
@@ -306,13 +305,14 @@ body {
     background-color: white;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
-    left: calc(50vw - 460px - 7.5px + 40px);
+    top: 450px;
+    left: calc(-60px - 7.5px + 40px);
     height: 600px;
     width: 380px;
 }
 
 .block-title {
-    color: rgb(242, 64, 52);
+    color: var(--red);
     position: absolute;
     top: 30px;
     left: calc(50% - 120px);
@@ -331,7 +331,8 @@ body {
 
 .block-side-border {
     position: absolute;
-    left: calc(50vw - 460px - 7.5px + 410px);
+    top: 430px;
+    left: calc(-60px - 7.5px + 410px);
     height: 700px;
     width: 450px;
 }
@@ -339,12 +340,12 @@ body {
 .block-side-border-path {
     z-index: 0;
     fill: none;
-    stroke: rgb(242, 64, 52);
+    stroke: var(--red);
     stroke-width: 5;
 }
 
 .block-side-title {
-    color: rgb(242, 64, 52);
+    color: var(--red);
     position: absolute;
     top: 30px;
     left: calc(50% - 150px);
@@ -362,69 +363,42 @@ body {
     width: 300px;
 }
 
+#education-group {
+    position: absolute;
+    top: var(--education);
+    left: calc(50vw - 400px);
+    width: calc(100vw - 200px);
+}
+
+#hobbies-group {
+    position: absolute;
+    top: var(--hobbies);
+    left: calc(50vw - 400px);
+    width: calc(100vw - 200px);
+}
+
+#projects-group {
+    position: absolute;
+    top: var(--projects);
+    left: calc(50vw - 400px);
+    width: calc(100vw - 200px);
+}
+
 #education-picture {
-    top: 1245px;
-    left: calc(50vw - 313px);
-}
-
-#education-white-box {
-    top: 1250px;
-}
-
-#education-picture-border {
-    top: 1250px;
-}
-
-#education-white-block {
-    top: 1700px;
-}
-
-#education-block-side-border {
-    top: 1680px;
+    top: 5px;
+    left: 87px;
 }
 
 #hobbies-picture {
-    top: 2630px;
-    left: calc(50vw - 250px);
+    top: 60px;
+    left: 150px;
     width: 500px;
-}
-
-#hobbies-white-box {
-    top: 2570px;
-}
-
-#hobbies-picture-border {
-    top: 2570px;
-}
-
-#hobbies-white-block {
-    top: 3020px;
-}
-
-#hobbies-block-side-border {
-    top: 3000px;
 }
 
 #projects-picture {
-    top: 4210px;
-    left: calc(50vw - 250px);
+    top: 30px;
+    left: 150px;
     width: 500px;
-}
-
-#projects-white-box {
-    top: 4190px;
-}
-
-#projects-picture-border {
-    top: 4190px;
-}
-
-#projects-white-block {
-    top: 4640px;
-}
-
-#projects-block-side-border {
-    top: 4620px;
 }
 
 #github-block {
@@ -432,14 +406,14 @@ body {
     background-color: white;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 5750px; 
-    left: calc(50vw - 460px - 7.5px + 40px);
+    top: 1560px; 
+    left: calc(-60px - 7.5px + 40px);
     width: 500px;
     height: 250px;
 }
 
 #github-block-title {
-    color: rgb(242, 64, 52);
+    color: var(--red);
     position: absolute;
     top: 40px;
     left: 70px;
@@ -462,12 +436,12 @@ body {
 #github-block-border-path {
     z-index: 1;
     fill: none;
-    stroke: rgb(242, 64, 52);
+    stroke: var(--red);
     stroke-width: 5;
 }
 
 #github-page {
-    color: rgb(242, 64, 52);
+    color: var(--red);
     position: absolute;
     top: 5px;
     left: 50px;
@@ -479,7 +453,7 @@ body {
 #animated-block:hover #github-block-border-path {
     transition: 1s;
     d: path(" M360, 50 v-50 h-360 v80 h360 v-30");
-    fill: rgb(242, 64, 52);
+    fill: var(--red);
 }
 
 #animated-block:hover #github-page {
