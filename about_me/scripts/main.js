@@ -34,6 +34,8 @@ var projects_header = document.getElementById('projects-header');
 var education_section = document.getElementById('education-section');
 var hobbies_section = document.getElementById('hobbies-section');
 var projects_section = document.getElementById('projects-section');
+var arrow = document.getElementById('arrow');
+var education_group = document.getElementById('education-group');
 var animated_block = document.getElementById('animated-block');
 
 education_header.onclick = function() {
@@ -48,6 +50,11 @@ hobbies_header.onclick = function() {
 
 projects_header.onclick = function() {
     var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
+    window.scrollTo(0, top - 100);
+}
+
+arrow.onclick = function() {
+    var top = parseInt(getComputedStyle(education_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 

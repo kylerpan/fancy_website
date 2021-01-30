@@ -1,8 +1,9 @@
 :root {
     --red: rgb(242, 64, 52);
-    --education: 1250px;
-    --hobbies: 2570px;
-    --projects: 4190px;
+    --notes: 1070px;
+    --education: 1540px;
+    --hobbies: 2870px;
+    --projects: 4490px;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 6500px;
+    height: 6800px;
     width: 100vw;
     display: block;
 }
@@ -262,6 +263,88 @@ body {
     width: 12px;
     transform: rotate(45deg);
     transform-origin: 50% 100%;
+}
+
+#notes {
+    position: absolute;
+    top: var(--notes);
+    left: 80px;
+    height: auto;
+    width: calc(100vw - 200px);
+}
+
+ul {
+    color: rgb(239, 239, 239);
+    position: absolute;
+    top: 0;
+    font-size: 10px;
+    line-height: 200%;
+}
+
+#a {
+    left: 0;
+}
+
+#b {
+    left: 20px;
+}
+
+#c {
+    left: 40px;
+}
+
+#d {
+    left: 60px;
+}
+
+#e {
+    left: 80px;
+}
+
+#f {
+    left: 100px;
+}
+
+#g {
+    left: 120px;
+}
+
+#h {
+    left: 140px;
+}
+
+#i {
+    left: 160px;
+}
+
+#j {
+    left: 180px;
+}
+
+#k {
+    left: 200px;
+}
+
+#l {
+    left: 220px;
+}
+
+#m {
+    left: 240px;
+}
+
+#n {
+    left: 260px;
+}
+
+#note {
+    position: absolute;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 170%;
+    top: 30px;
+    left: calc(50vw - 600px);
+    width: 1060px;
 }
 
 /* || Sections */

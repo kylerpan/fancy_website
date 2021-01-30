@@ -32,6 +32,8 @@ var portrait_header = document.getElementById('portrait-header');
 var landscape_header = document.getElementById('landscape-header');
 var portraits_section = document.getElementById('portraits-section');
 var landscapes_section = document.getElementById('landscapes-section');
+var arrow = document.getElementById('arrow');
+var notes = document.getElementById('notes');
 
 portrait_header.onclick = function() {
     var top = parseInt(getComputedStyle(portraits_section).getPropertyValue("top"));
@@ -41,6 +43,11 @@ portrait_header.onclick = function() {
 landscape_header.onclick = function() {
     var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
     window.scrollTo(0, top + 100);
+}
+
+arrow.onclick = function() {
+    var top = parseInt(getComputedStyle(notes).getPropertyValue("top"));
+    window.scrollTo(0, top - 100);
 }
 
 

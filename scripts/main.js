@@ -27,12 +27,12 @@ resume.onclick = function() {
 
 /* || Home */
 var arrow = document.getElementById('arrow');
-var inspiration = document.getElementById('inspiration');
+var notes = document.getElementById('notes');
 var about_me_block_text = document.getElementById('about-me-block-text');
 var gallery_block_text = document.getElementById('gallery-block-text');
 
 arrow.onclick = function() {
-    var top = parseInt(getComputedStyle(inspiration).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(notes).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
