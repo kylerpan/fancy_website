@@ -337,6 +337,35 @@ ul {
     left: 260px;
 }
 
+#line {
+    position: absolute;
+    top: -200px;
+    left: -10px;
+}
+
+#line-path {
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+}
+
+#line-about {
+    position: absolute;
+    top: 390px;
+    left: -35px;
+    font-size: 15px;
+    -webkit-transform: rotate(-90deg)
+}
+
+#line-me {
+    color: var(--red);
+    position: absolute;
+    top: 353px;
+    left: -21.5px;
+    font-size: 15px;
+    -webkit-transform: rotate(-90deg)
+}
+
 #note {
     position: absolute;
     font-size: 50px;
