@@ -564,7 +564,7 @@ ul {
 
 #animated-block:hover #github-block-border-path {
     transition: 1s;
-    d: path(" M360, 50 v-50 h-360 v80 h360 v-30");
+    d: path("M360, 50 v-50 h-360 v80 h360 v-30");
     fill: var(--red);
 }
 

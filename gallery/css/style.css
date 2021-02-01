@@ -264,14 +264,107 @@ body {
 #notes {
     position: absolute;
     top: var(--notes);
-    left: calc(50vw - 460px - 7.5px + 20px);
+    left: 80px;
     width: calc(100vw - 200px);
 }
 
-#warning {
+ul {
+    color: rgb(239, 239, 239);
+    position: absolute;
+    top: 0;
+    font-size: 10px;
+    line-height: 200%;
+}
+
+#a {
+    left: 0;
+}
+
+#b {
+    left: 20px;
+}
+
+#c {
+    left: 40px;
+}
+
+#d {
+    left: 60px;
+}
+
+#e {
+    left: 80px;
+}
+
+#f {
+    left: 100px;
+}
+
+#g {
+    left: 120px;
+}
+
+#h {
+    left: 140px;
+}
+
+#i {
+    left: 160px;
+}
+
+#j {
+    left: 180px;
+}
+
+#k {
+    left: 200px;
+}
+
+#l {
+    left: 220px;
+}
+
+#m {
+    left: 240px;
+}
+
+#n {
+    left: 260px;
+}
+
+#line {
+    position: absolute;
+    top: -200px;
+    left: -10px;
+}
+
+#line-path {
+    fill: none;
+    stroke: black;
+    stroke-width: 3;
+}
+
+#line-my {
+    position: absolute;
+    top: 415px;
+    left: -20px;
+    font-size: 15px;
+    -webkit-transform: rotate(-90deg)
+}
+
+#line-gallery {
+    color: var(--orange);
+    position: absolute;
+    top: 370px;
+    left: -41.5px;
+    font-size: 15px;
+    -webkit-transform: rotate(-90deg)
+}
+
+#note {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: calc(50vw - 600px);
     font-size: 32px;
     line-height: 2;
 }

@@ -30,19 +30,19 @@ resume.onclick = function() {
 /* || Gallery */
 var portrait_header = document.getElementById('portrait-header');
 var landscape_header = document.getElementById('landscape-header');
-var portraits_section = document.getElementById('portraits-section');
-var landscapes_section = document.getElementById('landscapes-section');
+var portraits_group = document.getElementById('portraits-group');
+var landscapes_group = document.getElementById('landscapes-group');
 var arrow = document.getElementById('arrow');
 var notes = document.getElementById('notes');
 
 portrait_header.onclick = function() {
-    var top = parseInt(getComputedStyle(portraits_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    var top = parseInt(getComputedStyle(portraits_group).getPropertyValue("top"));
+    window.scrollTo(0, top);
 }
 
 landscape_header.onclick = function() {
-    var top = parseInt(getComputedStyle(landscapes_section).getPropertyValue("top"));
-    window.scrollTo(0, top + 100);
+    var top = parseInt(getComputedStyle(landscapes_group).getPropertyValue("top"));
+    window.scrollTo(0, top);
 }
 
 arrow.onclick = function() {

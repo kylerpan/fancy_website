@@ -31,25 +31,24 @@ resume.onclick = function() {
 var education_header = document.getElementById('education-header');
 var hobbies_header = document.getElementById('hobbies-header');
 var projects_header = document.getElementById('projects-header');
-var education_section = document.getElementById('education-section');
-var hobbies_section = document.getElementById('hobbies-section');
-var projects_section = document.getElementById('projects-section');
-var arrow = document.getElementById('arrow');
 var education_group = document.getElementById('education-group');
+var hobbies_group = document.getElementById('hobbies-group');
+var projects_group = document.getElementById('projects-group');
+var arrow = document.getElementById('arrow');
 var animated_block = document.getElementById('animated-block');
 
 education_header.onclick = function() {
-    var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(education_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
 hobbies_header.onclick = function() {
-    var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(hobbies_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
 projects_header.onclick = function() {
-    var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(projects_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
