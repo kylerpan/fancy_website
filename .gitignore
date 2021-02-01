@@ -1,1 +1,11 @@
+# Never save dependencie
+node_modules/
+
+# Never save user specific items
 .DS_Store
+
+# Never save production code
+dist/
+
+# Never save logs
+*.log
