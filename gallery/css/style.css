@@ -17,7 +17,7 @@ html {
 body {
     overflow-y: auto;
     overflow-x: hidden;
-    font-family: Apercu Pro;
+    font-family: Roboto;
     position: relative;
     margin: 0;
     padding: 0;
@@ -112,8 +112,8 @@ body {
 
 #logo {
     position: absolute;
-    font-size: 20px;
-    top: 55px;
+    font-size: 30px;
+    top: 50px;
     left: 30px;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .drop-down-tabs {
     z-index: 4;
-    font-family: Apercu Mono;
+    font-family: Roboto Mono;
     margin: 15px 10px 10px 25px;
     font-size: 13px;
 }
@@ -199,7 +199,6 @@ body {
 
 #greating {
     color: white;
-    font-family: Apercu Pro;
     position: absolute;
     top: 80px;
     left: calc(50vw - 460px - 7.5px - 140px);
@@ -356,7 +355,7 @@ ul {
     color: var(--orange);
     position: absolute;
     top: 370px;
-    left: -41.5px;
+    left: -40.5px;
     font-size: 15px;
     -webkit-transform: rotate(-90deg)
 }
@@ -548,12 +547,11 @@ img {
 }
 
 #link {
-    color: rgb(50, 50, 50);   
     position: absolute;
-    bottom: 6px;
-    left: 155px; 
-    margin: 0;
-    font-size: 17px;
+    left: -100px; 
+    text-align: start;
+    grid-column-start: 2;
+    grid-row-start: 10;
     cursor: pointer;
 }
 

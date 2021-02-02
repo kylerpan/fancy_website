@@ -35,6 +35,7 @@ var education_group = document.getElementById('education-group');
 var hobbies_group = document.getElementById('hobbies-group');
 var projects_group = document.getElementById('projects-group');
 var arrow = document.getElementById('arrow');
+var notes = document.getElementById('notes');
 var animated_block = document.getElementById('animated-block');
 
 education_header.onclick = function() {
@@ -53,7 +54,7 @@ projects_header.onclick = function() {
 }
 
 arrow.onclick = function() {
-    var top = parseInt(getComputedStyle(education_group).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(notes).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 

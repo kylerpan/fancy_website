@@ -52,8 +52,6 @@ function assets(cb) {
   directories.forEach((dir) => {
     gulp.src(`${dir}/assets/*`)
         .pipe(gulp.dest(`dist/${dir}/assets`));
-    gulp.src(`${dir}/images/*`)
-        .pipe(gulp.dest(`dist/${dir}/images`));
   });
   cb();
 }

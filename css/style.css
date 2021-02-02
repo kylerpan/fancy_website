@@ -18,7 +18,7 @@ html {
 body {
     overflow-y: auto;
     overflow-x: hidden;
-    font-family: Apercu Pro;
+    font-family: Roboto;
     position: relative;
     margin: 0;
     padding: 0;
@@ -86,9 +86,9 @@ body {
 
 #logo {
     position: absolute;
-    font-size: 20px;
-    top: 55px;
-    left: 30px;
+    font-size: 30px;
+    top: 50px;
+    left: 50px;
 }
 
 #about-me {
@@ -143,7 +143,7 @@ body {
 
 .drop-down-tabs {
     z-index: 4;
-    font-family: Apercu Mono;
+    font-family: Roboto Mono;
     margin: 15px 10px 10px 25px;
     font-size: 13px;
 }
@@ -180,7 +180,6 @@ body {
 
 #greating {
     color: var(--red);
-    font-family: Apercu Pro;
     margin: 0;
     font-size: 128px;
     grid-row-start: 1;
@@ -354,7 +353,6 @@ ul {
     position: absolute;
     top: 750px;
     left: 5px;
-    cursor: pointer;
 }
 
 .block-border {
@@ -416,6 +414,10 @@ ul {
     stroke: var(--red);
 }
 
+#about-me-block {
+    cursor: pointer;
+}
+
 #about-me-block-text {
     color: var(--red);
 }
@@ -441,6 +443,10 @@ ul {
 
 #gallery-path {
     stroke: var(--orange);
+}
+
+#gallery-block {
+    cursor: pointer;
 }
 
 #gallery-block-text {
@@ -566,12 +572,11 @@ ul {
 }
 
 #link {
-    color: rgb(50, 50, 50);   
     position: absolute;
-    bottom: 6px;
-    left: 155px; 
-    margin: 0;
-    font-size: 17px;
+    left: -100px; 
+    text-align: start;
+    grid-column-start: 2;
+    grid-row-start: 10;
     cursor: pointer;
 }
 
