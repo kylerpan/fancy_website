@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    height: 6500px;
+    height: 6200px;
     width: 100vw;
     display: block;
 }
@@ -612,6 +612,12 @@ ul {
     top: 11px;
     height: 43px;
     grid-column-start: 3;
+}
+
+
+/* || Mobile */
+@media only screen and (max-width: 730px){
+    
 }
 
 
