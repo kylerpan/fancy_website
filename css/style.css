@@ -6,6 +6,7 @@
     --gallery: 3900px;
     --mnotes: 2100px;
     --mabout-me: 3000px;
+    --mgallery: 5100px;
 }
 
 html {
@@ -620,6 +621,19 @@ ul {
 /* || Mobile */
 @media only screen and (max-device-width: 730px){
 
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-family: Roboto;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        height: 8000px;
+        width: 100vw;
+        display: block;
+    }
+
     /* || Background */
     #background {
         z-index: -3;
@@ -803,7 +817,7 @@ ul {
     .divider-path {
         fill: none;
         stroke-width: 2;
-        d: path("M0, 30 h900");
+        d: path("M0, 30 h700");
     }
     
     .section-text {
@@ -843,20 +857,27 @@ ul {
     .section-photo {
         position: absolute;
         top: 900px;
-        left: calc(50vw - 635px);
-        width: 1030px;
+        left: calc(50vw - 520px);
+        width: 800px;
     }
     
     .photo-border {
         position: absolute;
         top: 900px;
-        left: calc(50vw - 635px);
+        left: calc(50vw - 520px);
+        /* height: 1066.66px;
+        height: 600px */
+        width: 800px;
     }
-    
-    .section-photo-path {
-        z-index: 1;
-        fill: none;
-        stroke-width: 2.5;
+
+    #about-me-photo-path {
+        stroke: var(--red);
+        d: path("M760, 400 v-360 h-720 v986.66 h720 v-500");
+    }
+
+    #gallery-photo-path {
+        stroke: var(--orange);
+        d: path("M760, 250 v-210 h-720 v520 h720 v-220");
     }
     
     #about-me-group {
@@ -865,29 +886,12 @@ ul {
         left: 120px;
         width: calc(100vw - 200px);
     }
-    
-    #about-me-divider-path {
-        stroke: var(--red);
-    }
-    
-    #about-me-title {
-        color: var(--red);
-    }
-    
-    #about-me-path {
-        stroke: var(--red);
-    }
-    
-    #about-me-block {
-        cursor: pointer;
-    }
-    
-    #about-me-block-text {
-        color: var(--red);
-    }
-    
-    #about-me-photo-path {
-        stroke: var(--red);
+
+    #gallery-group {
+        position: absolute;
+        top: var(--mgallery);
+        left: 120px;
+        width: calc(100vw - 200px);
     }
 }
 
