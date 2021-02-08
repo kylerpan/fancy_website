@@ -757,6 +757,7 @@ ul {
         background-color: lightgrey;
     }
 
+    /* || Intro */
     #body-wrapper {
         margin: 0;
         height: 100vh;
@@ -903,7 +904,6 @@ ul {
     }
 
     /* || Footer */
-    
     #footer-grid {
         position: absolute;
         top: 60px;
