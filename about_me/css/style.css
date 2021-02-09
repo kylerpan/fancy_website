@@ -4,6 +4,10 @@
     --education: 1540px;
     --hobbies: 2870px;
     --projects: 4490px;
+    --mnotes: 1300px;
+    --meducation: 1900px;
+    --mhobbies: 3550px;
+    --mprojects: 5800px;
 }
 
 html {
@@ -448,11 +452,38 @@ ul {
     width: 450px;
 }
 
+#education-text-border {
+    height: 700px;
+    width: 450px;
+}
+
+#hobbies-text-border {
+    height: 1000px;
+    width: 450px;
+}
+
+#projects-text-border {
+    height: 1040px;
+    width: 450px;
+}
+
 .block-side-border-path {
     z-index: 0;
     fill: none;
     stroke: var(--red);
     stroke-width: 5;
+}
+
+#education-side-border-path {
+    d: path("M300, 0 h-300 v700 h450 v-700 h-120")
+}
+
+#hobbies-side-border-path {
+    d: path("M300, 0 h-300 v1000 h450 v-1000 h-120")
+}
+
+#projects-side-border-path {
+    d: path("M300, 0 h-300 v1040 h450 v-1040 h-120")
 }
 
 .block-side-title {
@@ -713,13 +744,13 @@ ul {
 
     body {
         overflow-y: auto;
-        overflow-x: none;
+        overflow-x: hidden;
         font-family: Roboto;
         position: relative;
         margin: 0;
         padding: 0;
         min-height: 100vh;
-        height: 7600px;
+        height: 8900px;
         width: 100vw;
         display: block;
     }
@@ -934,92 +965,33 @@ ul {
 
     #notes {
         position: absolute;
-        top: var(--notes);
-        left: 80px;
+        top: var(--mnotes);
+        left: 25vw;
         height: auto;
-        width: calc(100vw - 200px);
+        width: 50vw;
     }
 
     ul {
-        color: rgb(239, 239, 239);
-        position: absolute;
-        top: 0;
-        font-size: 10px;
-        line-height: 200%;
-    }
-
-    #a {
-        left: 0;
-    }
-
-    #b {
-        left: 20px;
-    }
-
-    #c {
-        left: 40px;
-    }
-
-    #d {
-        left: 60px;
-    }
-
-    #e {
-        left: 80px;
-    }
-
-    #f {
-        left: 100px;
-    }
-
-    #g {
-        left: 120px;
-    }
-
-    #h {
-        left: 140px;
-    }
-
-    #i {
-        left: 160px;
-    }
-
-    #j {
-        left: 180px;
-    }
-
-    #k {
-        left: 200px;
-    }
-
-    #l {
-        left: 220px;
-    }
-
-    #m {
-        left: 240px;
-    }
-
-    #n {
-        left: 260px;
+        color: transparent;
     }
 
     #line {
         position: absolute;
-        top: -200px;
-        left: -10px;
+        top: -30px;
+        left: -160px;
     }
 
     #line-path {
         fill: none;
         stroke: black;
         stroke-width: 3;
+        d: path("M0, 0 v450")
     }
 
     #line-about {
         position: absolute;
-        top: 390px;
-        left: -35px;
+        top: 460px;
+        left: -185px;
         font-size: 15px;
         -webkit-transform: rotate(-90deg)
     }
@@ -1027,8 +999,8 @@ ul {
     #line-me {
         color: var(--red);
         position: absolute;
-        top: 353px;
-        left: -21.8px;
+        top: 423px;
+        left: -171.8px;
         font-size: 15px;
         -webkit-transform: rotate(-90deg)
     }
@@ -1038,9 +1010,154 @@ ul {
         font-size: 50px;
         letter-spacing: 2px;
         line-height: 170%;
+        top: 0px;
+        width: 80vw;
+    }
+
+    /* || Sections */
+    .sections {
+        z-index: 1;
+        color: var(--red);
+        position: absolute;
+        top: 0px;
+        left: -60px;
+        font-size: 130px;
+    }
+
+    .white-block {
+        z-index: 1;
+        background-color: white;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 400px;
+        left: calc(50vw - 390px);
+        width: 600px;
+    }
+
+    #education-white-block {
+        height: 300px;
+    }
+
+    #hobbies-projects-white-block {
+        height: 500px;
+    }
+
+    .block-title {
+        color: var(--red);
+        position: absolute;
         top: 30px;
-        left: calc(50vw - 600px);
-        width: 1060px;
+        left: 50px;
+        font-size: 35px;
+    }
+
+    .block-text {
+        color: black;
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        font-size: 35px;
+        line-height: 170%;
+        width: 500px;
+    }
+
+    .block-side-border {
+        position: absolute;
+        left: calc(50vw - 390px);
+        height: 700px;
+        width: 600px;
+    }
+
+    #education-block-side-border {
+        top: 800px;
+    }
+
+    #hobbies-projects-block-side-border {
+        top: 1000px;
+    }
+
+    #education-text-border {
+        height: 700px;
+        width: 600px;
+    }
+    
+    #hobbies-text-border {
+        height: 1100px;
+        width: 600px;
+    }
+    
+    #projects-text-border {
+        height: 1300px;
+        width: 600px;
+    }
+
+    .block-side-border-path {
+        z-index: 0;
+        fill: none;
+        stroke: var(--red);
+        stroke-width: 5;
+    }
+
+    #education-side-border-path {
+        d: path("M450, 0 h-450 v700 h600 v-700 h-120");
+    }
+
+    #hobbies-side-border-path {
+        d: path("M450, 0 h-450 v1100 h600 v-1100 h-120")
+    }
+    
+    #projects-side-border-path {
+        d: path("M450, 0 h-450 v1200 h600 v-1200 h-120")
+    }
+
+    .block-side-title {
+        color: var(--red);
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-size: 25px;
+    }
+
+    .block-side-text {
+        color: rgb(50, 50, 50);
+        font-family: Roboto Mono;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        font-size: 25px;
+        line-height: 170%;
+        width: 500px;
+    }
+
+    #education-group {
+        position: absolute;
+        top: var(--meducation);
+        left: calc(50vw - 400px);
+        width: calc(100vw - 200px);
+    }
+
+    #hobbies-group {
+        position: absolute;
+        top: var(--mhobbies);
+        left: calc(50vw - 400px);
+        width: calc(100vw - 200px);
+    }
+
+    #projects-group {
+        position: absolute;
+        top: var(--mprojects);
+        left: calc(50vw - 400px);
+        width: calc(100vw - 200px);
+    }
+
+    #github-block {
+        z-index: 1;
+        background-color: white;
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 2280px; 
+        left: calc(50vw - 450px);
+        width: 500px;
+        height: 250px;
     }
 
     /* || Footer */
