@@ -210,13 +210,22 @@ body {
     height: 100px;
 }
 
-#picture {
+#picture1 {
+    position: absolute;
+    top: 515px;
+    right: 438.33px;
+    height: 450px;
+    width: auto;
+}
+
+#picture2 {
     position: absolute;
     top: 515px;
     right: 0;
     height: 450px;
     width: auto;
 }
+
 .section-header {
     color: white;
     position: absolute;
@@ -341,32 +350,15 @@ ul {
 }
 
 #line {
-    position: absolute;
-    top: -200px;
-    left: -10px;
-}
-
-#line-path {
-    fill: none;
-    stroke: black;
-    stroke-width: 3;
+    display: none;
 }
 
 #line-about {
-    position: absolute;
-    top: 390px;
-    left: -35px;
-    font-size: 15px;
-    -webkit-transform: rotate(-90deg)
+    display: none;
 }
 
 #line-me {
-    color: var(--red);
-    position: absolute;
-    top: 353px;
-    left: -21.8px;
-    font-size: 15px;
-    -webkit-transform: rotate(-90deg)
+    display: none;
 }
 
 #note {
@@ -905,13 +897,18 @@ ul {
         height: 100px;
     }
 
-    #picture {
+    #picture1 {
         position: absolute;
         top: 600px;
-        right: -500px;
+        right: -1px;
         height: 600px;
         width: auto;
     }
+
+    #picture2{ 
+        display: none;
+    }
+    
     .section-header {
         color: white;
         position: absolute;

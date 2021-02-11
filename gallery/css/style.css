@@ -813,33 +813,15 @@ img {
     }
 
     #line {
-        position: absolute;
-        top: -20px;
-        left: -160px;
-    }
-
-    #line-path {
-        fill: none;
-        stroke: black;
-        stroke-width: 3;
-        d: path("M0, 0 v550")
+        display: none;
     }
 
     #line-my {
-        position: absolute;
-        top: 595px;
-        left: -169px;
-        font-size: 15px;
-        -webkit-transform: rotate(-90deg)
+        display: none;
     }
 
     #line-gallery {
-        color: var(--orange);
-        position: absolute;
-        top: 550px;
-        left: -190px;
-        font-size: 15px;
-        -webkit-transform: rotate(-90deg)
+        display: none;
     }
 
     #note {
@@ -971,7 +953,7 @@ img {
     
     #facebook {
         top: 12px;
-        left: -13px;
+        left: -5px;
         grid-column-start: 2;
     } 
 }    
