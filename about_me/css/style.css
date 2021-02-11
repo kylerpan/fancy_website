@@ -31,6 +31,18 @@ body {
     display: block;
 }
 
+#site-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 6900px;
+    width: 100vw;
+    display: block;
+} 
+
 /* || Background */
 #background {
     z-index: -3;
@@ -746,6 +758,18 @@ ul {
         width: 100vw;
         display: block;
     }
+
+    #site-wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        height: 8900px;
+        width: 100vw;
+        display: block;
+    } 
 
     /* || Background */
     #background {
