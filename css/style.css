@@ -419,6 +419,7 @@ ul {
 
 #about-me-divider-path {
     stroke: var(--red);
+    d: path("M0, 30 h1030");
 }
 
 #about-me-title {
@@ -439,6 +440,7 @@ ul {
 
 #about-me-photo-path {
     stroke: var(--red);
+    d: path("M990, 400 v-360 h-950 v1293.33 h950 v-733.33")
 }
 
 #gallery-group {
@@ -450,6 +452,7 @@ ul {
 
 #gallery-divider-path {
     stroke: var(--orange);
+    d: path("M0, 30 h1030");
 }
 
 #gallery-title {
@@ -470,6 +473,7 @@ ul {
 
 #gallery-photo-path {
     stroke: var(--orange);
+    d: path("M990, 300 v-260 h-950 v692.5 h950 v-192.5");
 }
 
 
@@ -847,10 +851,20 @@ ul {
     }
 
     /* || Sections */
+
+    #about-me-divider-path {
+        stroke: var(--red);
+        d: path("M0, 30 h700");
+    }
+
+    #gallery-divider-path {
+        stroke: var(--orange);
+        d: path("M0, 30 h700");
+    }
+
     .divider-path {
         fill: none;
         stroke-width: 2;
-        d: path("M0, 30 h700");
     }
     
     .section-text {
