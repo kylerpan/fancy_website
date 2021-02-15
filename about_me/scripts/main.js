@@ -72,6 +72,8 @@ var footer_hobbies = document.getElementById('footer-hobbies');
 var footer_projects = document.getElementById('footer-projects');
 var footer_portrait = document.getElementById('footer-portrait');
 var footer_landscape = document.getElementById('footer-landscape');
+var footer_resume = document.getElementById('footer-resume');
+var footer_back_to_top = document.getElementById('footer-back-to-top');
 var github_icon = document.getElementById('github');
 var facebook_icon = document.getElementById('facebook');
 var instagram_icon = document.getElementById('instagram');
@@ -93,17 +95,17 @@ footer_more.onclick = function() {
 }
 
 footer_education.onclick = function() {
-    var top = parseInt(getComputedStyle(education_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(education_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
 footer_hobbies.onclick = function() {
-    var top = parseInt(getComputedStyle(hobbies_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(hobbies_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
 footer_projects.onclick = function() {
-    var top = parseInt(getComputedStyle(projects_section).getPropertyValue("top"));
+    var top = parseInt(getComputedStyle(projects_group).getPropertyValue("top"));
     window.scrollTo(0, top - 100);
 }
 
@@ -113,6 +115,14 @@ footer_portrait.onclick = function() {
 
 footer_landscape.onclick = function() {
     window.location.href = "/gallery";
+}
+
+footer_resume.onclick = function() {
+    window.open("/assets/resume.pdf");
+}
+
+footer_back_to_top.onclick = function() {
+    window.scrollTo(0, 0);
 }
 
 github_icon.onclick = function() {

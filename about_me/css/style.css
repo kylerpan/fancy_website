@@ -667,6 +667,20 @@ ul {
     cursor: pointer;
 }
 
+#footer-email {
+    text-decoration: none;
+    text-align: start;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+#footer-copyright {
+    text-decoration: none;
+    text-align: start;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
 #footer-education {
     grid-column-start: 4;
     grid-row-start: 2;
@@ -690,6 +704,16 @@ ul {
 #footer-landscape {
     grid-column-start: 5;
     grid-row-start: 3;
+}
+
+#footer-resume {
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+#footer-back-to-top {
+    grid-column-start: 6;
+    grid-row-start: 8;
 }
 
 #footer-link {

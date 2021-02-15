@@ -54,6 +54,8 @@ var footer_hobbies = document.getElementById('footer-hobbies');
 var footer_projects = document.getElementById('footer-projects');
 var footer_portrait = document.getElementById('footer-portrait');
 var footer_landscape = document.getElementById('footer-landscape');
+var footer_resume = document.getElementById('footer-resume');
+var footer_back_to_top = document.getElementById('footer-back-to-top');
 var github_icon = document.getElementById('github');
 var facebook_icon = document.getElementById('facebook');
 var instagram_icon = document.getElementById('instagram');
@@ -93,6 +95,14 @@ footer_portrait.onclick = function() {
 
 footer_landscape.onclick = function() {
     window.location.href = "/gallery";
+}
+
+footer_resume.onclick = function() {
+    window.open("/assets/resume.pdf");
+}
+
+footer_back_to_top.onclick = function() {
+    window.scrollTo(0, 0);
 }
 
 github_icon.onclick = function() {
