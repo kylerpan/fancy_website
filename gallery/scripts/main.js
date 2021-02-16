@@ -4,6 +4,7 @@ var about_me = document.getElementById('about-me');
 var gallery = document.getElementById('gallery');
 var more = document.getElementById('more');
 var resume = document.getElementsByClassName('drop-down-tabs')[0];
+var github = document.getElementsByClassName('drop-down-tabs')[1];
 
 
 logo.onclick = function() {
@@ -24,6 +25,10 @@ more.onclick = function() {
 
 resume.onclick = function() {
     window.open("/assets/resume.pdf");
+}
+
+github.onclick = function() {
+    window.open("https://github.com/kylerpan");
 }
 
 

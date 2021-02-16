@@ -4,6 +4,7 @@ var about_me = document.getElementById('about-me');
 var gallery = document.getElementById('gallery');
 var more = document.getElementById('more');
 var resume = document.getElementsByClassName('drop-down-tabs')[0];
+var github = document.getElementsByClassName('drop-down-tabs')[1];
 
 
 logo.onclick = function() {
@@ -24,6 +25,10 @@ more.onclick = function() {
 
 resume.onclick = function() {
     window.open("/assets/resume.pdf");
+}
+
+github.onclick = function() {
+    window.open("https://github.com/kylerpan");
 }
 
 
@@ -126,13 +131,13 @@ footer_back_to_top.onclick = function() {
 }
 
 github_icon.onclick = function() {
-    window.open("https://github.com/kylerpan")
+    window.open("https://github.com/kylerpan");
 }
 
 facebook_icon.onclick = function() {
-    window.open("https://www.facebook.com/kyle.pan.735")
+    window.open("https://www.facebook.com/kyle.pan.735");
 }
 
 instagram_icon.onclick = function() {
-    window.open("https://www.instagram.com/kyle_pan_/")
+    window.open("https://www.instagram.com/kyle_pan_/");
 }
