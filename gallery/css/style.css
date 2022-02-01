@@ -238,6 +238,7 @@ body {
 }
 
 #portrait-header {
+    height: 500px;
     top: 385px;
 }
 
